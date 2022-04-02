@@ -42,4 +42,4 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           repository: ZNotify/server
-          event-type: frontend-update
+          event-type: frontend_update
