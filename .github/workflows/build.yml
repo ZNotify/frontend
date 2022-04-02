@@ -36,3 +36,10 @@ jobs:
           prerelease: true
           files: |
             build.zip
+
+      - name: Trigger Docker Build
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          repository: ZNotify/server
+          event-type: frontend-update
