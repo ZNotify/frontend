@@ -5,9 +5,10 @@ import './App.css';
 import {Button, Card, Input, message} from "antd";
 import {checkUser, sendNotify} from "./Utils";
 import TextArea from "antd/es/input/TextArea";
+import {Client} from "znotify";
 
 function App() {
-    const [userStatus, setUserStatus] = React.useState(true);
+    const [client, setClient] = React.useState<Client | null>(null);
     const [userId, setUserId] = React.useState('');
     const [title, setTitle] = React.useState('');
     const [content, setContent] = React.useState('');
@@ -18,12 +19,12 @@ function App() {
             return
         }
         checkUser(userId).then((ret) => {
-            setUserStatus(ret)
+            setClient(ret)
         })
     }, [userId])
 
     function submit() {
-        if (!userStatus) {
+        if (!client) {
             message.error("User ID is invalid.")
             return
         }
@@ -31,7 +32,7 @@ function App() {
             message.error("Content can not be empty.")
             return
         }
-        sendNotify(userId, title, content, long).then(() => {
+        sendNotify(client, title, content, long).then(() => {
             message.success("Notification sent.")
         }).catch((e: Error) => {
             message.error(e.message)
@@ -47,7 +48,7 @@ function App() {
                     <div style={{width: "100%", display: "inline-flex"}}>
                         <Input
                             value={userId}
-                            status={userStatus ? '' : 'error'}
+                            status={client ? '' : 'error'}
                             placeholder="User ID"
                             onChange={(e) => {
                                 setUserId(() => e.target.value)

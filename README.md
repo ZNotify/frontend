@@ -14,7 +14,7 @@ yarn install
 yarn build
 ```
 
-Built files are listed in the `../static` directory.
+Built files are listed in the `build` directory.
 
 ## Development
 
