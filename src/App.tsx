@@ -3,7 +3,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 import {Button, Card, Input, message} from "antd";
-import {checkUser, sendNotify} from "./Utils";
+import {checkUser, sendNotify} from "./utils";
 import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
 
