@@ -1,3 +1,14 @@
+@import '~antd/dist/antd.css';
+
+Input, TextArea {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+main {
+    justify-content: center;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

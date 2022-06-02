@@ -1,11 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import {StrictMode} from 'react';
 import './index.css';
-import App from './App';
+import Send from './Send';
+import Show from "./Show";
+import {createRoot} from "react-dom/client";
+import {HashRouter, Route, Routes} from "react-router-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const root = document.getElementById('root')
+if (root) {
+    createRoot(root).render(
+        <StrictMode>
+            <HashRouter>
+                <Routes>
+                    <Route path="/" element={<Send/>}/>
+                    <Route path="show" element={<Show/>}/>
+                    <Route path="*" element={<main>404</main>}/>
+                </Routes>
+            </HashRouter>
+        </StrictMode>,
+    );
+}

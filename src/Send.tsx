@@ -1,18 +1,17 @@
 // noinspection JSIgnoredPromiseFromCall
 
-import React, {useEffect} from 'react';
-import './App.css';
+import {useEffect, useState} from 'react';
 import {Button, Card, Input, message} from "antd";
 import {checkUser, sendNotify} from "./utils";
 import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
 
-function App() {
-    const [client, setClient] = React.useState<Client | null>(null);
-    const [userId, setUserId] = React.useState('');
-    const [title, setTitle] = React.useState('');
-    const [content, setContent] = React.useState('');
-    const [long, setLong] = React.useState('');
+function Send() {
+    const [client, setClient] = useState<Client | null>(null);
+    const [userId, setUserId] = useState('');
+    const [title, setTitle] = useState('');
+    const [content, setContent] = useState('');
+    const [long, setLong] = useState('');
 
     useEffect(() => {
         if (userId === "") {
@@ -93,4 +92,4 @@ function App() {
     );
 }
 
-export default App;
+export default Send;
