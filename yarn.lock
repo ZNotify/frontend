@@ -7244,9 +7244,19 @@ __metadata:
     react-router-dom: ^6.3.0
     react-scripts: 5.0.1
     typescript: 4.7.2
-    web-vitals: ^2.1.0
-    yarn: ^1.22.18
-    znotify: ^0.1.2
+    web-vitals: ^2.1.4
+    workbox-background-sync: ^6.5.3
+    workbox-broadcast-update: ^6.5.3
+    workbox-cacheable-response: ^6.5.3
+    workbox-core: ^6.5.3
+    workbox-expiration: ^6.5.3
+    workbox-navigation-preload: ^6.5.3
+    workbox-precaching: ^6.5.3
+    workbox-range-requests: ^6.5.3
+    workbox-routing: ^6.5.3
+    workbox-strategies: ^6.5.3
+    workbox-streams: ^6.5.3
+    znotify: ^0.4.0
   languageName: unknown
   linkType: soft
 
@@ -14494,7 +14504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^2.1.0":
+"web-vitals@npm:^2.1.4":
   version: 2.1.4
   resolution: "web-vitals@npm:2.1.4"
   checksum: 03d3f47dbf55c3dce07beb0ff5de8ddd52e2d0a53a8df5c84e7a16dda93543341d67231fa79b1d9772b091419af4ec0fd395b8bcf451a0e26846e3f76b3d0efc
@@ -14779,7 +14789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-background-sync@npm:6.5.3":
+"workbox-background-sync@npm:6.5.3, workbox-background-sync@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-background-sync@npm:6.5.3"
   dependencies:
@@ -14789,7 +14799,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-broadcast-update@npm:6.5.3":
+"workbox-broadcast-update@npm:6.5.3, workbox-broadcast-update@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-broadcast-update@npm:6.5.3"
   dependencies:
@@ -14843,7 +14853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-cacheable-response@npm:6.5.3":
+"workbox-cacheable-response@npm:6.5.3, workbox-cacheable-response@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-cacheable-response@npm:6.5.3"
   dependencies:
@@ -14852,14 +14862,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-core@npm:6.5.3":
+"workbox-core@npm:6.5.3, workbox-core@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-core@npm:6.5.3"
   checksum: b898da6d990642eaac7ad38db0d8379ef42d8de5fd6636ac859d79ec6f15d41e1b1bc6dce6dfc8b0e0b38094c0af8e29b2e8c2461666ea67cacd59dc5f53b45e
   languageName: node
   linkType: hard
 
-"workbox-expiration@npm:6.5.3":
+"workbox-expiration@npm:6.5.3, workbox-expiration@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-expiration@npm:6.5.3"
   dependencies:
@@ -14881,7 +14891,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-navigation-preload@npm:6.5.3":
+"workbox-navigation-preload@npm:6.5.3, workbox-navigation-preload@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-navigation-preload@npm:6.5.3"
   dependencies:
@@ -14890,7 +14900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-precaching@npm:6.5.3":
+"workbox-precaching@npm:6.5.3, workbox-precaching@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-precaching@npm:6.5.3"
   dependencies:
@@ -14901,7 +14911,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-range-requests@npm:6.5.3":
+"workbox-range-requests@npm:6.5.3, workbox-range-requests@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-range-requests@npm:6.5.3"
   dependencies:
@@ -14924,7 +14934,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-routing@npm:6.5.3":
+"workbox-routing@npm:6.5.3, workbox-routing@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-routing@npm:6.5.3"
   dependencies:
@@ -14933,7 +14943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-strategies@npm:6.5.3":
+"workbox-strategies@npm:6.5.3, workbox-strategies@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-strategies@npm:6.5.3"
   dependencies:
@@ -14942,7 +14952,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-streams@npm:6.5.3":
+"workbox-streams@npm:6.5.3, workbox-streams@npm:^6.5.3":
   version: 6.5.3
   resolution: "workbox-streams@npm:6.5.3"
   dependencies:
@@ -15108,16 +15118,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yarn@npm:^1.22.18":
-  version: 1.22.18
-  resolution: "yarn@npm:1.22.18"
-  bin:
-    yarn: bin/yarn.js
-    yarnpkg: bin/yarn.js
-  checksum: ffd9a4872caa5fce83e914592dd6a40bb978bf992d3dca839bc3853b9e6de951d7596f7e8c4a88bec3af3a049e46097f9139a51740d9074582fd923af8762f7a
-  languageName: node
-  linkType: hard
-
 "yn@npm:3.1.1":
   version: 3.1.1
   resolution: "yn@npm:3.1.1"
@@ -15132,12 +15132,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"znotify@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "znotify@npm:0.1.2"
+"znotify@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "znotify@npm:0.4.0"
   dependencies:
     axios: ^0.26.1
     qs: ^6.10.3
-  checksum: 69ca351308ad36dea4bd60f9e80f7e006906ef2706c065c314aae358c64090f1bb72f34a2c47f9fe91613de007819ce0d29c65317377638a52216bcd53c07442
+  checksum: 493ae5ded2667b087f199ca4f70690535d5cc6f0a5d26a1154ab3902e2ebe126e0e83180ff0ba64806ca7dfb290acf3234e46d3e6ed3a045a494d5a26a836482
   languageName: node
   linkType: hard

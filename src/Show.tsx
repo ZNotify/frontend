@@ -1,12 +1,20 @@
 import {Button, Card} from "antd";
 import ReactMarkdown from "react-markdown";
-import {useParams} from "react-router-dom";
+import {useNavigate, useSearchParams} from "react-router-dom";
+import {Client} from "znotify";
 import {rfc3339toTimeStr} from "./utils";
 
 function Show() {
-    const {userID, long, msgID, title, createdAt, content} = useParams();
+    const [searchParams] = useSearchParams();
+    const navigate = useNavigate();
+    const userID = searchParams.get("userID");
+    const msgID = searchParams.get("msgID");
+    const title = searchParams.get("title");
+    const createdAt = searchParams.get("createdAt");
+    const content = searchParams.get("content");
+    const long = searchParams.get("long");
 
-    if ([userID, long, msgID, title, createdAt, content].includes(undefined)) {
+    if ([userID, long, msgID, title, createdAt, content].includes(null)) {
         return <main>
             <h1>Missing argument.</h1>
         </main>;
@@ -15,11 +23,13 @@ function Show() {
     const timeString = rfc3339toTimeStr(createdAt!!);
 
     function close() {
-        window.close();
+        navigate("/");
     }
 
     function deleteMsg() {
-
+        Client.create(userID!!).then(c => c.delete(msgID!!)).then(() => {
+            close()
+        })
     }
 
     return (
@@ -27,7 +37,8 @@ function Show() {
             <Card
                 title={title}
                 style={{
-                    maxWidth: "min(300px,40vw)"
+                    maxWidth: "min(600px,100vw)",
+                    width: "90vw"
                 }}
             >
                 <p>{content}</p>
@@ -40,19 +51,20 @@ function Show() {
                         color: "gray"
                     }}
                 >{timeString}</p>
+                <div>
+                    <Button
+                        type="primary"
+                        danger
+                        onClick={deleteMsg}
+                        style={{marginTop: '10px', float: 'left'}}
+                    >删除</Button>
+                    <Button
+                        type="primary"
+                        style={{marginTop: '10px', float: 'right'}}
+                        onClick={close}
+                    >确定</Button>
+                </div>
             </Card>
-            <div>
-                <Button
-                    type="primary"
-                    style={{marginTop: '10px', float: 'left'}}
-                >删除</Button>
-                <Button
-                    type="primary"
-                    style={{marginTop: '10px', float: 'right'}}
-                    onClick={close}
-                >确定</Button>
-            </div>
-
         </main>
     )
 }
