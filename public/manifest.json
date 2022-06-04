@@ -1,6 +1,6 @@
 {
   "short_name": "Notify",
-  "name": "Notify via mipush",
+  "name": "Notify",
   "icons": [
     {
       "src": "favicon.ico",

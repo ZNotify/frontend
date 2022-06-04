@@ -1,5 +1,3 @@
-import {WEB_PUSH_PUBLIC_KEY} from "./static";
-
 const isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -8,28 +6,18 @@ const isLocalhost = Boolean(
     window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4]\d|[01]?\d\d?)){3}$/)
 );
 
-type Config = {
-    onSuccess?: (registration: ServiceWorkerRegistration) => void;
-    onUpdate?: (registration: ServiceWorkerRegistration) => void;
-};
-
-export function register(config?: Config) {
-    if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+export function register() {
+    if ('serviceWorker' in navigator) {
         const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
         if (publicUrl.origin !== window.location.origin) {
             return;
         }
 
         window.addEventListener('load', () => {
-            const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-
+            const swUrl = `${process.env.PUBLIC_URL}/serviceWorker.js`;
             if (isLocalhost) {
-                checkValidServiceWorker(swUrl, config);
-                navigator.serviceWorker.ready.then(() => {
-                    console.log(
-                        'Service Worker is active.'
-                    );
-                });
+                // console.log("Check service worker");
+                checkValidServiceWorker(swUrl);
             } else {
                 registerValidSW(swUrl);
             }
@@ -40,26 +28,12 @@ export function register(config?: Config) {
 function registerValidSW(swUrl: string) {
     navigator.serviceWorker
         .register(swUrl)
-        .then((registration) => {
-            registration.onupdatefound = () => {
-                const installingWorker = registration.installing;
-                if (installingWorker == null) {
-                    return;
-                }
-            }
-
-            registration.pushManager.subscribe({
-                userVisibleOnly: true,
-                applicationServerKey: WEB_PUSH_PUBLIC_KEY
-            }).then((subscription) => {
-                console.log(subscription);
-            })
-        }).catch((error) => {
+        .catch((error) => {
         console.error('Error during service worker registration:', error);
     });
 }
 
-function checkValidServiceWorker(swUrl: string, config?: Config) {
+function checkValidServiceWorker(swUrl: string) {
     fetch(swUrl, {
         headers: {'Service-Worker': 'script'},
     })
@@ -87,7 +61,7 @@ export function unregister() {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.ready
             .then((registration) => {
-                registration.unregister().then(r => {
+                registration.unregister().then(() => {
                     console.log('Service Worker unregistered');
                 });
             })

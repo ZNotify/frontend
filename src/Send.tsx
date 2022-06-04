@@ -1,10 +1,12 @@
 // noinspection JSIgnoredPromiseFromCall
 
 import {useEffect, useState} from 'react';
-import {Button, Card, Input, message} from "antd";
+import {Button, Card, Input, message, Modal} from "antd";
 import {checkUser, sendNotify} from "./utils";
 import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
+import {useLocalStorage} from "react-use";
+import {API_ENDPOINT, WEB_PUSH_PUBLIC_KEY} from "./static";
 
 function Send() {
     const [client, setClient] = useState<Client | null>(null);
@@ -12,6 +14,8 @@ function Send() {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [long, setLong] = useState('');
+    const [subscribed, setSubscribed] = useLocalStorage('subscribed', false);
+
 
     useEffect(() => {
         if (userId === "") {
@@ -35,6 +39,57 @@ function Send() {
             message.success("Notification sent.")
         }).catch((e: Error) => {
             message.error(e.message)
+        })
+    }
+
+    function subscribe() {
+        if (subscribed) {
+            console.warn("Already subscribed.")
+            return
+        }
+        if (!client) {
+            message.error("User ID is invalid.")
+            return;
+        }
+        Modal.confirm({
+            title: "Subscribe WebPush",
+            content: "Do you really want to subscribe WebPush?\n\n" +
+                "You will only receive notifications when browser is active.",
+            onOk: async () => {
+                if (Notification.permission !== "granted") {
+                    const permission = await Notification.requestPermission();
+                    if (permission !== "granted") {
+                        message.error("Permission denied.")
+                        return
+                    }
+                }
+                const registration = await navigator.serviceWorker
+                    .getRegistration(`${process.env.PUBLIC_URL}/serviceWorker.js`);
+                if (!registration) {
+                    message.error("ServiceWorker is not registered.")
+                    return
+                }
+                const subscription = await registration.pushManager.subscribe({
+                    userVisibleOnly: true,
+                    applicationServerKey: WEB_PUSH_PUBLIC_KEY
+                })
+                if (!subscription) {
+                    message.error("Get subscription failed.")
+                    return
+                }
+
+                const resp = await fetch(`${API_ENDPOINT}/${userId}/web/sub`, {
+                    method: "PUT",
+                    body: JSON.stringify(subscription),
+                })
+                if (resp.ok) {
+                    setSubscribed(true)
+                    message.success("Subscribed.")
+                } else {
+                    message.error("Save subscription failed.")
+                }
+            },
+            onCancel: () => {}
         })
     }
 
@@ -82,11 +137,19 @@ function Send() {
                         style={{width: '100%'}}
                     />
                 </Input.Group>
-                <Button
-                    type="primary"
-                    style={{marginTop: '10px', float: 'right'}}
-                    onClick={submit}
-                >Notify</Button>
+                <div style={{marginTop: '10px'}}>
+                    {!subscribed && <Button
+                        type="primary"
+                        style={{float: 'left'}}
+                        onClick={subscribe}
+                    >Subscribe</Button>}
+
+                    <Button
+                        type="primary"
+                        style={{float: 'right'}}
+                        onClick={submit}
+                    >Notify</Button>
+                </div>
             </Card>
         </main>
     );

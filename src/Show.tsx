@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import {useNavigate, useSearchParams} from "react-router-dom";
 import {Client} from "znotify";
 import {rfc3339toTimeStr} from "./utils";
+import {API_ENDPOINT} from "./static";
 
 function Show() {
     const [searchParams] = useSearchParams();
@@ -27,7 +28,7 @@ function Show() {
     }
 
     function deleteMsg() {
-        Client.create(userID!!).then(c => c.delete(msgID!!)).then(() => {
+        Client.create(userID!!, API_ENDPOINT).then(c => c.delete(msgID!!)).then(() => {
             close()
         })
     }

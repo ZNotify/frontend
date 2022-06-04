@@ -4,9 +4,7 @@ import Send from './Send';
 import Show from "./Show";
 import {createRoot} from "react-dom/client";
 import {HashRouter, Route, Routes} from "react-router-dom";
-import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import {isDebug} from "./utils";
 
 const root = document.getElementById('root')
 if (root) {
@@ -24,7 +22,3 @@ if (root) {
 }
 
 serviceWorkerRegistration.register()
-
-if (isDebug()) {
-    reportWebVitals(console.log)
-}
