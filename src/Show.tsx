@@ -15,7 +15,7 @@ function Show() {
     const content = searchParams.get("content");
     const long = searchParams.get("long");
 
-    if ([userID, long, msgID, title, createdAt, content].includes(null)) {
+    if ([userID, msgID, createdAt, content].includes(null)) {
         return <main>
             <h1>Missing argument.</h1>
         </main>;
