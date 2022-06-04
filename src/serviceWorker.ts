@@ -75,7 +75,7 @@ self.addEventListener('notificationclick', (event) => {
             query.append('long', data.long);
         }
 
-        const url = `${process.env.PUBLIC_URL}#/show?${query.toString()}`;
+        const url = `${process.env.PUBLIC_URL}/#/show?${query.toString()}`;
         return self.clients.openWindow(url);
     }));
 })
