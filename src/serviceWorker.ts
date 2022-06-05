@@ -2,27 +2,12 @@
 /* eslint-disable no-restricted-globals */
 // noinspection JSFileReferences
 
-import {clientsClaim} from 'workbox-core';
-import {createHandlerBoundToURL, precacheAndRoute} from 'workbox-precaching';
-import {registerRoute} from 'workbox-routing';
 
 declare const self: ServiceWorkerGlobalScope;
 
-clientsClaim();
-precacheAndRoute(self.__WB_MANIFEST);
-const fileExtensionRegexp = new RegExp('/[^/?]+\\.[^/]+$');
-registerRoute(
-    ({request, url}: { request: Request; url: URL }) => {
-        if (request.mode !== 'navigate') {
-            return false;
-        }
-        if (url.pathname.startsWith('/_')) {
-            return false;
-        }
-        return !url.pathname.match(fileExtensionRegexp);
-    },
-    createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html')
-);
+// @ts-expect-error
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const ignored = self.__WB_MANIFEST;
 
 self.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
@@ -80,3 +65,4 @@ self.addEventListener('notificationclick', (event) => {
     }));
 })
 
+export {};
