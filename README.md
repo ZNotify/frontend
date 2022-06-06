@@ -22,6 +22,7 @@ Built files are listed in the `build` directory.
 yarn start
 ```
 
-## Warning
+## Self-hosting
 
-When develop with Node.js <= 16.x, please remove `--openssl-legacy-provider` option in the script.
+Normally, you should edit `src/static.ts`.
+If you want to serve the app from a different domain, you should also edit `homepage` in `package.json`.
