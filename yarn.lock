@@ -4684,10 +4684,6 @@ jest-environment-node@^28.1.1:
     jest-mock "^28.1.1"
     jest-util "^28.1.1"
 
-jest-get-type@^27.5.1:
-  version "27.5.1"
-  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-27.5.1.tgz#3cd613c507b0f7ace013df407a1c1cd578bcb4f1"
-
 jest-get-type@^28.0.2:
   version "28.0.2"
   resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-28.0.2.tgz#34622e628e4fdcd793d46db8a242227901fcf203"
@@ -4784,21 +4780,6 @@ jest-resolve-dependencies@^28.1.1:
   dependencies:
     jest-regex-util "^28.0.2"
     jest-snapshot "^28.1.1"
-
-jest-resolve@^27.4.2:
-  version "27.5.1"
-  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-27.5.1.tgz#a2f1c5a0796ec18fe9eb1536ac3814c23617b384"
-  dependencies:
-    "@jest/types" "^27.5.1"
-    chalk "^4.0.0"
-    graceful-fs "^4.2.9"
-    jest-haste-map "^27.5.1"
-    jest-pnp-resolver "^1.2.2"
-    jest-util "^27.5.1"
-    jest-validate "^27.5.1"
-    resolve "^1.20.0"
-    resolve.exports "^1.1.0"
-    slash "^3.0.0"
 
 jest-resolve@^28.1.1:
   version "28.1.1"
@@ -4923,17 +4904,6 @@ jest-util@^28.1.1:
     ci-info "^3.2.0"
     graceful-fs "^4.2.9"
     picomatch "^2.2.3"
-
-jest-validate@^27.5.1:
-  version "27.5.1"
-  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-27.5.1.tgz#9197d54dc0bdb52260b8db40b46ae668e04df067"
-  dependencies:
-    "@jest/types" "^27.5.1"
-    camelcase "^6.2.0"
-    chalk "^4.0.0"
-    jest-get-type "^27.5.1"
-    leven "^3.1.0"
-    pretty-format "^27.5.1"
 
 jest-validate@^28.1.1:
   version "28.1.1"
@@ -6410,14 +6380,6 @@ pretty-error@^4.0.0:
     lodash "^4.17.20"
     renderkid "^3.0.0"
 
-pretty-format@^27.5.1:
-  version "27.5.1"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.5.1.tgz#2181879fdea51a7a5851fb39d920faa63f01d88e"
-  dependencies:
-    ansi-regex "^5.0.1"
-    ansi-styles "^5.0.0"
-    react-is "^17.0.1"
-
 pretty-format@^28.1.1:
   version "28.1.1"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-28.1.1.tgz#f731530394e0f7fcd95aba6b43c50e02d86b95cb"
@@ -6901,10 +6863,6 @@ react-error-overlay@^6.0.11:
 react-is@^16.12.0, react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
-
-react-is@^17.0.1:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
 
 react-is@^18.0.0:
   version "18.1.0"
