@@ -60,7 +60,7 @@
     "typescript": "4.7.4",
     "web-vitals": "^2.1.4",
     "webpack": "^5.64.4",
-    "webpack-dev-server": "^4.6.0",
+    "webpack-dev-server": "^4.9.3",
     "webpack-manifest-plugin": "^5.0.0",
     "workbox-background-sync": "^6.5.3",
     "workbox-broadcast-update": "^6.5.3",
