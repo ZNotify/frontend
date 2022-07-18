@@ -2144,9 +2144,9 @@ ansi-styles@^5.0.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-5.2.0.tgz#07449690ad45777d1924ac2abb2fc8895dba836b"
 
-antd@^4.21.5:
-  version "4.21.5"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-4.21.5.tgz#32a6c604b9153f6fe69d3d5aa154de0da00165a4"
+antd@^4.21.7:
+  version "4.21.7"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-4.21.7.tgz#a542cbd46539c4de426245efa7bb459ae25cbcf5"
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons" "^4.7.0"
@@ -2168,7 +2168,7 @@ antd@^4.21.5:
     rc-image "~5.7.0"
     rc-input "~0.0.1-alpha.5"
     rc-input-number "~7.3.0"
-    rc-mentions "~1.8.0"
+    rc-mentions "~1.9.0"
     rc-menu "~9.6.0"
     rc-motion "^2.5.1"
     rc-notification "~4.6.0"
@@ -2182,10 +2182,10 @@ antd@^4.21.5:
     rc-slider "~10.0.0"
     rc-steps "~4.1.0"
     rc-switch "~3.2.0"
-    rc-table "~7.24.0"
+    rc-table "~7.25.0"
     rc-tabs "~11.16.0"
     rc-textarea "~0.3.0"
-    rc-tooltip "~5.1.1"
+    rc-tooltip "~5.2.0"
     rc-tree "~5.6.5"
     rc-tree-select "~5.4.0"
     rc-trigger "^5.2.10"
@@ -6374,16 +6374,16 @@ rc-input@~0.0.1-alpha.5:
     classnames "^2.2.1"
     rc-util "^5.18.1"
 
-rc-mentions@~1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/rc-mentions/-/rc-mentions-1.8.0.tgz#4c0c41605064303f7aedec47d4d07e0bbfcc2dc3"
+rc-mentions@~1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/rc-mentions/-/rc-mentions-1.9.0.tgz#0ddff6ab442dce58efa7b9f5ae561b0051173334"
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "^2.2.6"
     rc-menu "~9.6.0"
     rc-textarea "^0.3.0"
     rc-trigger "^5.0.4"
-    rc-util "^5.0.1"
+    rc-util "^5.22.5"
 
 rc-menu@~9.6.0:
   version "9.6.0"
@@ -6515,9 +6515,9 @@ rc-switch@~3.2.0:
     classnames "^2.2.1"
     rc-util "^5.0.1"
 
-rc-table@~7.24.0:
-  version "7.24.3"
-  resolved "https://registry.yarnpkg.com/rc-table/-/rc-table-7.24.3.tgz#5a3f05037a6c36e8dd9345b4d7c0308f4952ee8c"
+rc-table@~7.25.0:
+  version "7.25.2"
+  resolved "https://registry.yarnpkg.com/rc-table/-/rc-table-7.25.2.tgz#deadc184858d60033eb73cdf8dd0f2459da307e6"
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "^2.2.5"
@@ -6546,9 +6546,9 @@ rc-textarea@^0.3.0, rc-textarea@~0.3.0:
     rc-util "^5.7.0"
     shallowequal "^1.1.0"
 
-rc-tooltip@^5.0.1, rc-tooltip@~5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/rc-tooltip/-/rc-tooltip-5.1.1.tgz#94178ed162d0252bc4993b725f5dc2ac0fccf154"
+rc-tooltip@^5.0.1, rc-tooltip@~5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/rc-tooltip/-/rc-tooltip-5.2.1.tgz#6ba602ea908e418b4b83afe35e543d6885cdbfcc"
   dependencies:
     "@babel/runtime" "^7.11.2"
     rc-trigger "^5.0.0"
