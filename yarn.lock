@@ -2110,11 +2110,17 @@ ajv@^8.0.0, ajv@^8.6.0, ajv@^8.8.0:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-ansi-escapes@^4.2.1, ansi-escapes@^4.3.1:
+ansi-escapes@^4.2.1:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
   dependencies:
     type-fest "^0.21.3"
+
+ansi-escapes@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-5.0.0.tgz#b6a0caf0eef0c41af190e9a749e0c00ec04bb2a6"
+  dependencies:
+    type-fest "^1.0.2"
 
 ansi-html-community@^0.0.8:
   version "0.0.8"
@@ -4741,11 +4747,11 @@ jest-validate@^28.1.1:
     leven "^3.1.0"
     pretty-format "^28.1.1"
 
-jest-watch-typeahead@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/jest-watch-typeahead/-/jest-watch-typeahead-1.1.0.tgz#b4a6826dfb9c9420da2f7bc900de59dad11266a9"
+jest-watch-typeahead@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jest-watch-typeahead/-/jest-watch-typeahead-2.0.0.tgz#1808eb9462a5887e3c65fdaacf3c537211609955"
   dependencies:
-    ansi-escapes "^4.3.1"
+    ansi-escapes "^5.0.0"
     chalk "^4.0.0"
     jest-regex-util "^28.0.0"
     jest-watcher "^28.0.0"
@@ -5870,9 +5876,9 @@ postcss-load-config@^4.0.1:
     lilconfig "^2.0.5"
     yaml "^2.1.1"
 
-postcss-loader@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-7.0.0.tgz#367d10eb1c5f1d93700e6b399683a6dc7c3af396"
+postcss-loader@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-7.0.1.tgz#4c883cc0a1b2bfe2074377b7a74c1cd805684395"
   dependencies:
     cosmiconfig "^7.0.0"
     klona "^2.0.5"
@@ -7680,6 +7686,10 @@ type-fest@^0.21.3:
   version "0.21.3"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.21.3.tgz#d260a24b0198436e133fa26a524a6d65fa3b2e37"
 
+type-fest@^1.0.2:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.4.0.tgz#e9fb813fe3bf1744ec359d55d1affefa76f14be1"
+
 type-is@~1.6.18:
   version "1.6.18"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
@@ -8106,9 +8116,13 @@ workbox-cacheable-response@6.5.3, workbox-cacheable-response@^6.5.3:
   dependencies:
     workbox-core "6.5.3"
 
-workbox-core@6.5.3, workbox-core@^6.5.3:
+workbox-core@6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.5.3.tgz#bca038a9ef0d7a634a6db2a60f45313ed22ac249"
+
+workbox-core@6.5.4, workbox-core@^6.5.3:
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.5.4.tgz#df48bf44cd58bb1d1726c49b883fb1dffa24c9ba"
 
 workbox-expiration@6.5.3, workbox-expiration@^6.5.3:
   version "6.5.3"
@@ -8132,13 +8146,21 @@ workbox-navigation-preload@6.5.3, workbox-navigation-preload@^6.5.3:
   dependencies:
     workbox-core "6.5.3"
 
-workbox-precaching@6.5.3, workbox-precaching@^6.5.3:
+workbox-precaching@6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/workbox-precaching/-/workbox-precaching-6.5.3.tgz#c870312b2ef901d790ab9e48da084e776c62af47"
   dependencies:
     workbox-core "6.5.3"
     workbox-routing "6.5.3"
     workbox-strategies "6.5.3"
+
+workbox-precaching@^6.5.4:
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/workbox-precaching/-/workbox-precaching-6.5.4.tgz#740e3561df92c6726ab5f7471e6aac89582cab72"
+  dependencies:
+    workbox-core "6.5.4"
+    workbox-routing "6.5.4"
+    workbox-strategies "6.5.4"
 
 workbox-range-requests@6.5.3, workbox-range-requests@^6.5.3:
   version "6.5.3"
@@ -8157,17 +8179,29 @@ workbox-recipes@6.5.3:
     workbox-routing "6.5.3"
     workbox-strategies "6.5.3"
 
-workbox-routing@6.5.3, workbox-routing@^6.5.3:
+workbox-routing@6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-6.5.3.tgz#a0a699d8cc90b5692bd3df24679acbbda3913777"
   dependencies:
     workbox-core "6.5.3"
 
-workbox-strategies@6.5.3, workbox-strategies@^6.5.3:
+workbox-routing@6.5.4, workbox-routing@^6.5.3:
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-6.5.4.tgz#6a7fbbd23f4ac801038d9a0298bc907ee26fe3da"
+  dependencies:
+    workbox-core "6.5.4"
+
+workbox-strategies@6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/workbox-strategies/-/workbox-strategies-6.5.3.tgz#4bea9a48fee16cf43766e0d8138296773c8a9783"
   dependencies:
     workbox-core "6.5.3"
+
+workbox-strategies@6.5.4, workbox-strategies@^6.5.3:
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/workbox-strategies/-/workbox-strategies-6.5.4.tgz#4edda035b3c010fc7f6152918370699334cd204d"
+  dependencies:
+    workbox-core "6.5.4"
 
 workbox-streams@6.5.3, workbox-streams@^6.5.3:
   version "6.5.3"
