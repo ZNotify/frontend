@@ -6827,7 +6827,7 @@ __metadata:
     identity-obj-proxy: ^3.0.0
     jest: ^28.1.3
     jest-resolve: ^28.1.3
-    jest-watch-typeahead: ^2.0.0
+    jest-watch-typeahead: 2.1.1
     mini-css-extract-plugin: ^2.6.1
     postcss: 8.4.16
     postcss-flexbugs-fixes: ^5.0.2
@@ -8380,9 +8380,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-watch-typeahead@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "jest-watch-typeahead@npm:2.0.0"
+"jest-watch-typeahead@npm:2.1.1":
+  version: 2.1.1
+  resolution: "jest-watch-typeahead@npm:2.1.1"
   dependencies:
     ansi-escapes: ^5.0.0
     chalk: ^4.0.0
@@ -8392,8 +8392,8 @@ __metadata:
     string-length: ^5.0.1
     strip-ansi: ^7.0.1
   peerDependencies:
-    jest: ^27.0.0 || ^28.0.0
-  checksum: c25fa793e56e0a316642a714c960b29359ddc1ce3f621ffb8a42a3ccfffb67c57223597e2fb387d5f49e2b93a22fc1f4b54e900e4fa80eca6602f70a30c22ffb
+    jest: ^27.0.0 || ^28.0.0 || ^29.0.0
+  checksum: ba5f619c82b382e93e3439dc262146c4aa71e126deb118418881c2cf6a83872cde115bef004b1d205df48f050c0cd6c88be1fba5d6ddc1d1aa11195a71ea8d07
   languageName: node
   linkType: hard
 
