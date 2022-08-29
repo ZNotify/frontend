@@ -59,7 +59,7 @@
     "terser-webpack-plugin": "^5.2.5",
     "typescript": "4.7.4",
     "web-vitals": "^2.1.4",
-    "webpack": "^5.64.4",
+    "webpack": "5.74.0",
     "webpack-dev-server": "4.10.0",
     "webpack-manifest-plugin": "^5.0.0",
     "workbox-background-sync": "^6.5.3",
