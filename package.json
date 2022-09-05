@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "fs",
   "dependencies": {
-    "@babel/core": "7.18.13",
+    "@babel/core": "7.19.0",
     "@craco/craco": "6.4.5",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.7",
     "@svgr/webpack": "6.3.1",
