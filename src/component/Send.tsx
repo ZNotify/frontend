@@ -1,10 +1,15 @@
 import {useEffect, useState} from 'react';
 import {Button, Card, Input, message, Modal} from "antd";
-import {checkUser, sendNotify} from "./utils";
+import 'antd/es/button/style';
+import 'antd/es/card/style';
+import 'antd/es/input/style';
+import 'antd/es/modal/style';
+import 'antd/es/message/style';
+import {checkUser, sendNotify} from "../utils";
 import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
 import {useLocalStorage} from "react-use";
-import {API_ENDPOINT, WEB_PUSH_PUBLIC_KEY} from "./static";
+import {API_ENDPOINT, WEB_PUSH_PUBLIC_KEY} from "../static";
 
 function Send() {
     const [client, setClient] = useState<Client | null>(null);
@@ -13,7 +18,6 @@ function Send() {
     const [content, setContent] = useState('');
     const [long, setLong] = useState('');
     const [subscribed, setSubscribed] = useLocalStorage('subscribed', false);
-
 
     useEffect(() => {
         if (userId === "") {
@@ -62,7 +66,7 @@ function Send() {
                     }
                 }
                 const registration = await navigator.serviceWorker
-                    .getRegistration(`${location.origin}/serviceWorker.js`);
+                    .getRegistration(new URL('../serviceWorker.ts', import.meta.url));
                 if (!registration) {
                     message.error("ServiceWorker is not registered.")
                     return
@@ -87,7 +91,8 @@ function Send() {
                     message.error("Save subscription failed.")
                 }
             },
-            onCancel: () => {}
+            onCancel: () => {
+            }
         })
     }
 

@@ -1,13 +1,14 @@
-import {StrictMode} from 'react';
+import {lazy, StrictMode} from 'react';
 import './index.css';
-import 'antd/dist/antd.css'
-import Send from './Send';
-import Show from "./Show";
 import {createRoot} from "react-dom/client";
 import {HashRouter, Route, Routes} from "react-router-dom";
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import {register} from './serviceWorkerRegistration';
 
 const root = document.getElementById('root')
+
+const Send = lazy(() => import('./component/Send'))
+const Show = lazy(() => import('./component/Show'))
+
 if (root) {
     createRoot(root).render(
         <StrictMode>
@@ -22,4 +23,4 @@ if (root) {
     );
 }
 
-serviceWorkerRegistration.register()
+register();

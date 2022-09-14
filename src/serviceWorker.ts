@@ -1,13 +1,11 @@
-/// <reference lib="webworker" />
-/// <reference no-default-lib="true"/>
-/// <reference lib="es2020" />
 /// <reference lib="WebWorker" />
+// noinspection JSFileReferences
 
 import { } from '.'
 
-declare var self: ServiceWorkerGlobalScope & typeof globalThis
+declare var self: ServiceWorkerGlobalScope
 
-console.log(location)
+
 self.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
         self.skipWaiting();

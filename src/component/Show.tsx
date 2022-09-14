@@ -1,9 +1,11 @@
 import {Button, Card} from "antd";
+import 'antd/es/button/style';
+import 'antd/es/card/style';
 import ReactMarkdown from "react-markdown";
 import {useNavigate, useSearchParams} from "react-router-dom";
 import {Client} from "znotify";
-import {rfc3339toTimeStr} from "./utils";
-import {API_ENDPOINT} from "./static";
+import {rfc3339toTimeStr} from "../utils";
+import {API_ENDPOINT} from "../static";
 
 function Show() {
     const [searchParams] = useSearchParams();

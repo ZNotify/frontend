@@ -26,3 +26,4 @@ yarn-error.log*
 .yarn/install-state.gz
 
 .idea/
+stats/

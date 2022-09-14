@@ -8,11 +8,6 @@ const isLocalhost = Boolean(
 
 export function register() {
     if ('serviceWorker' in navigator) {
-        const publicUrl = new URL(window.location.href);
-        if (publicUrl.origin !== window.location.origin) {
-            return;
-        }
-
         window.addEventListener('load', () => {
             registerValidSW();
         });
