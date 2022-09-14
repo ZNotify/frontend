@@ -1,5 +1,3 @@
-// noinspection JSIgnoredPromiseFromCall
-
 import {useEffect, useState} from 'react';
 import {Button, Card, Input, message, Modal} from "antd";
 import {checkUser, sendNotify} from "./utils";
@@ -64,7 +62,7 @@ function Send() {
                     }
                 }
                 const registration = await navigator.serviceWorker
-                    .getRegistration(`${process.env.PUBLIC_URL}/serviceWorker.js`);
+                    .getRegistration(`${location.origin}/serviceWorker.js`);
                 if (!registration) {
                     message.error("ServiceWorker is not registered.")
                     return

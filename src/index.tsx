@@ -1,5 +1,6 @@
 import {StrictMode} from 'react';
 import './index.css';
+import 'antd/dist/antd.css'
 import Send from './Send';
 import Show from "./Show";
 import {createRoot} from "react-dom/client";

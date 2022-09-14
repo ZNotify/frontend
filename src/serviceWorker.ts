@@ -1,14 +1,13 @@
 /// <reference lib="webworker" />
-/* eslint-disable no-restricted-globals */
-// noinspection JSFileReferences
+/// <reference no-default-lib="true"/>
+/// <reference lib="es2020" />
+/// <reference lib="WebWorker" />
 
+import { } from '.'
 
-declare const self: ServiceWorkerGlobalScope;
+declare var self: ServiceWorkerGlobalScope & typeof globalThis
 
-// @ts-expect-error
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const ignored = self.__WB_MANIFEST;
-
+console.log(location)
 self.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
         self.skipWaiting();
@@ -60,9 +59,7 @@ self.addEventListener('notificationclick', (event) => {
             query.append('long', data.long);
         }
 
-        const url = `${process.env.PUBLIC_URL}/#/show?${query.toString()}`;
+        const url = `${location.origin}/#/show?${query.toString()}`;
         return self.clients.openWindow(url);
     }));
 })
-
-export {};
