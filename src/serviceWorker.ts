@@ -1,8 +1,6 @@
 /// <reference lib="WebWorker" />
 // noinspection JSFileReferences
 
-import { } from '.'
-
 declare var self: ServiceWorkerGlobalScope
 
 
@@ -61,3 +59,4 @@ self.addEventListener('notificationclick', (event) => {
         return self.clients.openWindow(url);
     }));
 })
+export default undefined;

@@ -10,6 +10,7 @@ import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
 import {useLocalStorage} from "react-use";
 import {API_ENDPOINT, WEB_PUSH_PUBLIC_KEY} from "../static";
+import {getRegistration} from "../serviceWorkerRegistration";
 
 function Send() {
     const [client, setClient] = useState<Client | null>(null);
@@ -65,8 +66,7 @@ function Send() {
                         return
                     }
                 }
-                const registration = await navigator.serviceWorker
-                    .getRegistration(new URL('../serviceWorker.ts', import.meta.url));
+                const registration = await getRegistration()
                 if (!registration) {
                     message.error("ServiceWorker is not registered.")
                     return

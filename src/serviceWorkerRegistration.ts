@@ -1,25 +1,17 @@
-const isLocalhost = Boolean(
-    window.location.hostname === 'localhost' ||
-    // [::1] is the IPv6 localhost address.
-    window.location.hostname === '[::1]' ||
-    // 127.0.0.0/8 are considered localhost for IPv4.
-    window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4]\d|[01]?\d\d?)){3}$/)
-);
-
 export function register() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            registerValidSW();
+            navigator.serviceWorker
+                .register(import.meta.env.BASE_URL + "serviceWorker.js")
+                .catch((error) => {
+                    console.error('Error during service worker registration:', error);
+                });
         });
     }
 }
 
-function registerValidSW() {
-    navigator.serviceWorker
-        .register(new URL('serviceWorker.ts', import.meta.url))
-        .catch((error) => {
-        console.error('Error during service worker registration:', error);
-    });
+export async function getRegistration() {
+    return await navigator.serviceWorker.getRegistration(import.meta.env.BASE_URL + "serviceWorker.js");
 }
 
 export function unregister() {
