@@ -2,7 +2,7 @@ import {Client} from "znotify";
 import {API_ENDPOINT} from "./static";
 
 export function isDebug() {
-    return process.env.NODE_ENV === 'development';
+    return import.meta.env.NODE_ENV === 'development';
 }
 
 export async function checkUser(userId: string): Promise<Client | null> {
