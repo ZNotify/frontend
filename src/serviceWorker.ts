@@ -24,7 +24,7 @@ self.addEventListener('push', (event) => {
         const data = event.data.json() as MessageData;
         const title = data.title;
         const content = data.content;
-        event.waitUntil(self.registration.showNotification(title || "", {
+        event.waitUntil(self.registration.showNotification(title || "Notification", {
             body: content,
             data: event.data.text(),
         }))
