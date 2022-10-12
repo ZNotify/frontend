@@ -5,6 +5,7 @@ import 'antd/es/card/style';
 import 'antd/es/input/style';
 import 'antd/es/modal/style';
 import 'antd/es/message/style';
+import {v4 as uuid} from 'uuid';
 import {checkUser, sendNotify} from "../utils";
 import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
@@ -19,6 +20,7 @@ function Send() {
     const [content, setContent] = useState('');
     const [long, setLong] = useState('');
     const [subscribed, setSubscribed] = useLocalStorage('subscribed', false);
+    const [deviceID, setDeviceID] = useLocalStorage('deviceID', uuid());
 
     useEffect(() => {
         if (userId === "") {
@@ -80,16 +82,16 @@ function Send() {
                     return
                 }
 
-                const resp = await fetch(`${API_ENDPOINT}/${userId}/web/sub`, {
-                    method: "PUT",
-                    body: JSON.stringify(subscription),
-                })
-                if (resp.ok) {
-                    setSubscribed(true)
-                    message.success("Subscribed.")
-                } else {
-                    message.error("Save subscription failed.")
-                }
+                client.register("WebPush", JSON.stringify(subscription), deviceID!)
+                    .then(() => {
+                        setSubscribed(true)
+                        message.success("Subscribed.")
+                    })
+                    .catch((e: Error) => {
+                        console.error(e)
+                        message.error("Save subscription failed.")
+                    })
+
             },
             onCancel: () => {
             }
