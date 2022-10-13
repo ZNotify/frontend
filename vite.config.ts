@@ -19,7 +19,7 @@ export default defineConfig({
             },
             devOptions: {
                 enabled: true,
-                type: 'classic'
+                type: 'module'
             },
             injectRegister: 'inline',
         }),
@@ -45,7 +45,7 @@ export default defineConfig({
     },
     optimizeDeps: {
         esbuildOptions: {
-            target: 'esnext',
+            target: 'es2019',
         },
     },
 })
