@@ -1,10 +1,6 @@
 import {Client} from "znotify";
 import {API_ENDPOINT} from "./static";
 
-export function isDebug() {
-    return import.meta.env.DEV;
-}
-
 export async function checkUser(userId: string): Promise<Client | null> {
     try {
         return await Client.create(userId, API_ENDPOINT);

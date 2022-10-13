@@ -2,7 +2,6 @@ import React from 'react';
 import './index.css';
 import {createRoot} from "react-dom/client";
 import {HashRouter, Route, Routes} from "react-router-dom";
-import {register} from './serviceWorkerRegistration';
 
 const LazySend = React.lazy(() => import('./component/Send'));
 const LazyShow = React.lazy(() => import('./component/Show'));
@@ -21,5 +20,3 @@ if (root) {
         </React.StrictMode>,
     );
 }
-
-register()

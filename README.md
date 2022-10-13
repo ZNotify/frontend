@@ -1,7 +1,5 @@
 # Frontend for Notify
 
-`Create with creat-react-app`
-
 ## Installation
 
 ```
@@ -19,7 +17,7 @@ Built files are listed in the `build` directory.
 ## Development
 
 ```shell
-yarn start
+yarn dev
 ```
 
 ## Self-hosting

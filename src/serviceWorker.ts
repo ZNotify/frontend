@@ -1,14 +1,16 @@
 /// <reference lib="WebWorker" />
 // noinspection JSFileReferences
 
-declare var self: ServiceWorkerGlobalScope
+import { precacheAndRoute } from 'workbox-precaching'
+import { clientsClaim } from 'workbox-core'
 
 
-self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
-        self.skipWaiting();
-    }
-});
+precacheAndRoute(self.__WB_MANIFEST)
+
+declare let self: ServiceWorkerGlobalScope
+
+self.skipWaiting()
+clientsClaim()
 
 interface MessageData {
     "id": string,
@@ -59,4 +61,3 @@ self.addEventListener('notificationclick', (event) => {
         return self.clients.openWindow(url);
     }));
 })
-export default undefined;

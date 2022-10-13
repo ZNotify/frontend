@@ -1,44 +1,40 @@
 import {defineConfig} from 'vite'
 import {visualizer} from "rollup-plugin-visualizer";
 import react from '@vitejs/plugin-react'
+import {VitePWA} from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
     base: '/fs/',
     plugins: [
         react(),
+        VitePWA({
+            base: '/fs/',
+            strategies: 'injectManifest',
+            registerType: 'autoUpdate',
+            srcDir: 'src',
+            filename: 'serviceWorker.ts',
+            workbox: {
+                sourcemap: true
+            },
+            devOptions: {
+                enabled: true,
+                type: 'classic'
+            },
+            injectRegister: 'inline',
+        }),
+        visualizer({
+            brotliSize: true,
+            gzipSize: true,
+            template: 'sunburst',
+            filename: 'stats/rollup-stats.html',
+            title: 'Rollup (Build) stats',
+        })
     ],
     build: {
         outDir: 'build',
         chunkSizeWarningLimit: 1000,
-        minify: 'terser',
-        terserOptions: {
-            compress: {
-                passes: 2,
-                dead_code: true,
-                drop_console: true,
-                drop_debugger: true,
-                ecma: 2020
-            },
-            format: {
-                comments: false,
-                ascii_only: true,
-            }
-        },
-        rollupOptions: {
-            input: {
-                app: './index.html',
-                serviceWorker: './src/serviceWorker.ts',
-            },
-            output: {
-                entryFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === 'serviceWorker') {
-                        return 'serviceWorker.js';
-                    }
-                    return '[name].[hash].js';
-                }
-            }
-        }
+        sourcemap: true,
     },
     css: {
         preprocessorOptions: {
@@ -48,6 +44,8 @@ export default defineConfig({
         },
     },
     optimizeDeps: {
-        disabled: true,
-    }
+        esbuildOptions: {
+            target: 'esnext',
+        },
+    },
 })

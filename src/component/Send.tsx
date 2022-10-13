@@ -10,7 +10,7 @@ import {checkUser, sendNotify} from "../utils";
 import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
 import {useLocalStorage} from "react-use";
-import {API_ENDPOINT, WEB_PUSH_PUBLIC_KEY} from "../static";
+import {WEB_PUSH_PUBLIC_KEY} from "../static";
 import {getRegistration} from "../serviceWorkerRegistration";
 
 function Send() {
