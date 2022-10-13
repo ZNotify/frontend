@@ -25,10 +25,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-image: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     background-size: cover;
 }
 

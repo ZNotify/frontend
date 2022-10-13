@@ -20,7 +20,7 @@ function Send() {
     const [content, setContent] = useState('');
     const [long, setLong] = useState('');
     const [subscribed, setSubscribed] = useLocalStorage('subscribed', false);
-    const [deviceID, setDeviceID] = useLocalStorage('deviceID', uuid());
+    const [deviceID] = useLocalStorage('deviceID', uuid());
 
     useEffect(() => {
         if (userId === "") {
@@ -147,12 +147,14 @@ function Send() {
                         type="primary"
                         style={{float: 'left'}}
                         onClick={subscribe}
+                        disabled={!client}
                     >Subscribe</Button>}
 
                     <Button
                         type="primary"
                         style={{float: 'right'}}
                         onClick={submit}
+                        disabled={!client}
                     >Notify</Button>
                 </div>
             </Card>
