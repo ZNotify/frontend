@@ -154,7 +154,7 @@ function Send() {
                         type="primary"
                         style={{float: 'right'}}
                         onClick={submit}
-                        disabled={!client}
+                        disabled={(!client) || (!content)}
                     >Notify</Button>
                 </div>
             </Card>
