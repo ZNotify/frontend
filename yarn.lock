@@ -1950,7 +1950,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/uuid@npm:^8.3.4":
+"@types/uuid@npm:8.3.4":
   version: 8.3.4
   resolution: "@types/uuid@npm:8.3.4"
   checksum: 6f11f3ff70f30210edaa8071422d405e9c1d4e53abbe50fdce365150d3c698fe7bbff65c1e71ae080cbfb8fded860dbb5e174da96fdbbdfcaa3fb3daa474d20f
@@ -3879,7 +3879,7 @@ __metadata:
     "@types/node": 18.8.5
     "@types/react": 18.0.21
     "@types/react-dom": 18.0.6
-    "@types/uuid": ^8.3.4
+    "@types/uuid": 8.3.4
     "@vitejs/plugin-react": 2.2.0-beta.0
     antd: 4.23.5
     eslint: 8.25.0
@@ -3893,12 +3893,12 @@ __metadata:
     rollup-plugin-visualizer: 5.8.3
     terser: 5.15.1
     typescript: 4.8.4
-    uuid: ^9.0.0
+    uuid: 9.0.0
     vite: 3.1.7
-    vite-plugin-pwa: ^0.13.1
+    vite-plugin-pwa: 0.13.1
     web-vitals: 3.0.3
-    workbox-core: ^6.5.4
-    workbox-precaching: ^6.5.4
+    workbox-core: 6.5.4
+    workbox-precaching: 6.5.4
     znotify: 0.6.1
   languageName: unknown
   linkType: soft
@@ -7696,7 +7696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:^9.0.0":
+"uuid@npm:9.0.0":
   version: 9.0.0
   resolution: "uuid@npm:9.0.0"
   bin:
@@ -7741,7 +7741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pwa@npm:^0.13.1":
+"vite-plugin-pwa@npm:0.13.1":
   version: 0.13.1
   resolution: "vite-plugin-pwa@npm:0.13.1"
   dependencies:
@@ -7929,7 +7929,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-core@npm:6.5.4, workbox-core@npm:^6.5.4":
+"workbox-core@npm:6.5.4":
   version: 6.5.4
   resolution: "workbox-core@npm:6.5.4"
   checksum: d973cc6c1c5fdbde7f6642632384c2e0de48f08228eb234db2c97a18a7e5422b483005767e7b447ea774abc0772dfc1edef2ef2b5df174df4d40ae61d4c49719
@@ -7967,7 +7967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-precaching@npm:6.5.4, workbox-precaching@npm:^6.5.4":
+"workbox-precaching@npm:6.5.4":
   version: 6.5.4
   resolution: "workbox-precaching@npm:6.5.4"
   dependencies:
