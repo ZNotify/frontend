@@ -91,7 +91,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.19.6":
+"@babel/core@npm:7.19.6, @babel/core@npm:^7.19.6":
   version: 7.19.6
   resolution: "@babel/core@npm:7.19.6"
   dependencies:
@@ -114,7 +114,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.11.1, @babel/core@npm:^7.16.0, @babel/core@npm:^7.19.3":
+"@babel/core@npm:^7.11.1, @babel/core@npm:^7.16.0":
   version: 7.19.3
   resolution: "@babel/core@npm:7.19.3"
   dependencies:
@@ -1240,14 +1240,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx-source@npm:^7.18.6":
-  version: 7.18.6
-  resolution: "@babel/plugin-transform-react-jsx-source@npm:7.18.6"
+"@babel/plugin-transform-react-jsx-source@npm:^7.19.6":
+  version: 7.19.6
+  resolution: "@babel/plugin-transform-react-jsx-source@npm:7.19.6"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.18.6
+    "@babel/helper-plugin-utils": ^7.19.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 7e17e631820955f158c16e9b01a96cf82e3ee81bb3c7c03f2896ee0d41da3e8a7557546893bc81792afe46b817c4e9014fd6e4de8644fcf16fd0f7c4daf66e41
+  checksum: 1e9e29a4efc5b79840bd4f68e404f5ab7765ce48c7bd22f12f2b185f9c782c66933bdf54a1b21879e4e56e6b50b4e88aca82789ecb1f61123af6dfa9ab16c555
   languageName: node
   linkType: hard
 
@@ -2174,20 +2174,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:2.2.0-beta.0":
-  version: 2.2.0-beta.0
-  resolution: "@vitejs/plugin-react@npm:2.2.0-beta.0"
+"@vitejs/plugin-react@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@vitejs/plugin-react@npm:2.2.0"
   dependencies:
-    "@babel/core": ^7.19.3
+    "@babel/core": ^7.19.6
     "@babel/plugin-transform-react-jsx": ^7.19.0
     "@babel/plugin-transform-react-jsx-development": ^7.18.6
     "@babel/plugin-transform-react-jsx-self": ^7.18.6
-    "@babel/plugin-transform-react-jsx-source": ^7.18.6
-    magic-string: ^0.26.5
+    "@babel/plugin-transform-react-jsx-source": ^7.19.6
+    magic-string: ^0.26.7
     react-refresh: ^0.14.0
   peerDependencies:
     vite: ^3.0.0
-  checksum: 59c12067adf4aadf29f0a677a1be003691885926d6b7dacb11a85cfa98c4c1fb6bab1590e2193136115fb4eafbd02a3b924a35afd3d6b72975aef4a8a492def2
+  checksum: cc85ab31b4689ab137c4b1e65383dccce494371523eb164c579096e513a2abbaa7efb49ba08655fae9f6692f5b7b2602ad339bdce4ae5982fc08fe444fb8a4e5
   languageName: node
   linkType: hard
 
@@ -3969,7 +3969,7 @@ __metadata:
     "@types/react": 18.0.22
     "@types/react-dom": 18.0.7
     "@types/uuid": 8.3.4
-    "@vitejs/plugin-react": 2.2.0-beta.0
+    "@vitejs/plugin-react": 2.2.0
     antd: 4.23.6
     eslint: 8.26.0
     eslint-config-react-app: 7.0.1
@@ -5001,7 +5001,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.26.5":
+"magic-string@npm:^0.26.7":
   version: 0.26.7
   resolution: "magic-string@npm:0.26.7"
   dependencies:
