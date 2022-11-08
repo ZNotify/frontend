@@ -2344,9 +2344,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"antd@npm:4.24.0":
-  version: 4.24.0
-  resolution: "antd@npm:4.24.0"
+"antd@npm:4.24.1":
+  version: 4.24.1
+  resolution: "antd@npm:4.24.1"
   dependencies:
     "@ant-design/colors": ^6.0.0
     "@ant-design/icons": ^4.7.0
@@ -2379,7 +2379,7 @@ __metadata:
     rc-segmented: ~2.1.0
     rc-select: ~14.1.13
     rc-slider: ~10.0.0
-    rc-steps: ~5.0.0-alpha.0
+    rc-steps: ~5.0.0-alpha.2
     rc-switch: ~3.2.0
     rc-table: ~7.26.0
     rc-tabs: ~12.2.0
@@ -2394,7 +2394,7 @@ __metadata:
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 6f67f469823a5bd3d7d35c3a08d31caa89df29175cf30816c7c8cbafa8475fab77154d5d19acdb3411164007dd9ba64ad1bef018b08fe8640350e1b974090ab8
+  checksum: 3dee7cdb9a37fd0a22bba0eb1272d7f6fd21a5d3198195dc5f2cd0a6fa2ee127c1f170d92bec93fba094f312354d9f4fef1e499ea0ea28a3d865175319920f30
   languageName: node
   linkType: hard
 
@@ -4011,7 +4011,7 @@ __metadata:
     "@types/react-dom": 18.0.8
     "@types/uuid": 8.3.4
     "@vitejs/plugin-react": 2.2.0
-    antd: 4.24.0
+    antd: 4.24.1
     eslint: 8.27.0
     eslint-config-react-app: 7.0.1
     less: 4.1.3
@@ -6380,7 +6380,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-steps@npm:~5.0.0-alpha.0":
+"rc-steps@npm:~5.0.0-alpha.2":
   version: 5.0.0
   resolution: "rc-steps@npm:5.0.0"
   dependencies:
