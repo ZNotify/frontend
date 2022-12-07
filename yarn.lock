@@ -4274,7 +4274,7 @@ __metadata:
     web-vitals: 3.1.0
     workbox-core: 6.5.4
     workbox-precaching: 6.5.4
-    znotify: 0.6.1
+    znotify: 0.7.1
   languageName: unknown
   linkType: soft
 
@@ -8528,12 +8528,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"znotify@npm:0.6.1":
-  version: 0.6.1
-  resolution: "znotify@npm:0.6.1"
+"znotify@npm:0.7.1":
+  version: 0.7.1
+  resolution: "znotify@npm:0.7.1"
   dependencies:
     axios: ^1.1.2
     qs: ^6.11.0
-  checksum: 5427245a758496554913a4a58adf9a8a3a2362b0559601a81840c7e6043a97e84650cfcdac475c6ce7a7ad50462de6298bd8cefb29d6e37abc7846bb54061502
+  checksum: 3ed0a137674fca7d6ced1c7b6a20f5243fabb922a05016b9e79329c64ce541f24b2b7d7adf3eb1b8946b0365ee4f45a80440387c7f9b9fb38fe5e23c09760809
   languageName: node
   linkType: hard

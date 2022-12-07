@@ -37,7 +37,7 @@
     "web-vitals": "3.1.0",
     "workbox-core": "6.5.4",
     "workbox-precaching": "6.5.4",
-    "znotify": "0.6.1"
+    "znotify": "0.7.1"
   },
   "eslintConfig": {
     "extends": [
