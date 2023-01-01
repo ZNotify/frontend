@@ -1,18 +1,16 @@
-import {Button, Card} from "antd";
-import 'antd/es/button/style';
-import 'antd/es/card/style';
 import ReactMarkdown from "react-markdown";
 import {useNavigate, useSearchParams} from "react-router-dom";
 import {Client} from "znotify";
 import {rfc3339toTimeStr} from "../utils";
 import {API_ENDPOINT} from "../static";
+import {Button, Card, CardBody, CardFooter, CardHeader} from "@chakra-ui/react";
 
 function Show() {
     const [searchParams] = useSearchParams();
     const navigate = useNavigate();
     const userID = searchParams.get("userID");
     const msgID = searchParams.get("msgID");
-    const title = searchParams.get("title");
+    const title = searchParams.get("title") || "Notification";
     const createdAt = searchParams.get("createdAt");
     const content = searchParams.get("content");
     const long = searchParams.get("long");
@@ -41,32 +39,33 @@ function Show() {
                 title={title}
                 style={{
                     maxWidth: "min(600px,100vw)",
-                    width: "90vw"
+                    width: "90vw",
+                    backgroundColor: "white",
                 }}
             >
-                <p>{content}</p>
-                {long !== "" && <ReactMarkdown children={long!!}/>}
-                <div style={{
-                    height: "1em"
-                }}/>
-                <p
-                    style={{
-                        color: "gray"
-                    }}
-                >{timeString}</p>
-                <div>
+                <CardHeader>{content}</CardHeader>
+                <CardBody>
+                    {long !== "" && <ReactMarkdown children={long!!}/>}
+                    <div style={{
+                        height: "1em"
+                    }}/>
+                    <p
+                        style={{
+                            color: "gray"
+                        }}
+                    >{timeString}</p>
+                </CardBody>
+                <CardFooter>
                     <Button
-                        type="primary"
-                        danger
+                        colorScheme={"red"}
                         onClick={deleteMsg}
                         style={{marginTop: '10px', float: 'left'}}
                     >删除</Button>
                     <Button
-                        type="primary"
                         style={{marginTop: '10px', float: 'right'}}
                         onClick={close}
                     >确定</Button>
-                </div>
+                </CardFooter>
             </Card>
         </main>
     )

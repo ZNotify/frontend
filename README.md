@@ -3,13 +3,13 @@
 ## Installation
 
 ```
-yarn install
+pnpm install
 ```
 
 ## Build
 
 ```shell
-yarn build
+pnpm run build
 ```
 
 Built files are listed in the `build` directory.
@@ -17,7 +17,7 @@ Built files are listed in the `build` directory.
 ## Development
 
 ```shell
-yarn dev
+pnpm run dev
 ```
 
 ## Self-hosting

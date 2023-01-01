@@ -1,17 +1,18 @@
-import {useEffect, useState} from 'react';
-import {Button, Card, Input, message, Modal} from "antd";
-import 'antd/es/button/style';
-import 'antd/es/card/style';
-import 'antd/es/input/style';
-import 'antd/es/modal/style';
-import 'antd/es/message/style';
+import React, {useEffect, useState} from 'react';
 import {v4 as uuid} from 'uuid';
 import {checkUser, sendNotify} from "../utils";
-import TextArea from "antd/es/input/TextArea";
 import {Client} from "znotify";
 import {useLocalStorage} from "react-use";
 import {WEB_PUSH_PUBLIC_KEY} from "../static";
 import {getRegistration} from "../serviceWorkerRegistration";
+import {
+    AlertDialog, AlertDialogBody, AlertDialogCloseButton,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogOverlay, Button, Card, CardBody, CardFooter, CardHeader, Input, Textarea,
+    useDisclosure,
+    useToast
+} from "@chakra-ui/react";
 
 function Send() {
     const [client, setClient] = useState<Client | null>(null);
@@ -21,6 +22,10 @@ function Send() {
     const [long, setLong] = useState('');
     const [subscribed, setSubscribed] = useLocalStorage('subscribed', false);
     const [deviceID] = useLocalStorage('deviceID', uuid());
+    const toast = useToast();
+
+    const {isOpen: isDialogOpen, onOpen: onDialogOpen, onClose: onDialogClose} = useDisclosure()
+    const cancelDialogRef = React.useRef<any>()
 
     useEffect(() => {
         if (userId === "") {
@@ -33,17 +38,29 @@ function Send() {
 
     function submit() {
         if (!client) {
-            message.error("User ID is invalid.")
+            toast({
+                title: "User ID is invalid.",
+                status: "error",
+            })
             return
         }
         if (!content) {
-            message.error("Content can not be empty.")
+            toast({
+                title: "Content can not be empty.",
+                status: "error",
+            })
             return
         }
         sendNotify(client, title, content, long).then(() => {
-            message.success("Notification sent.")
+            toast({
+                title: "Notification sent.",
+                status: "success",
+            })
         }).catch((e: Error) => {
-            message.error(e.message)
+            toast({
+                title: e.message,
+                status: "error",
+            })
         })
     }
 
@@ -53,61 +70,77 @@ function Send() {
             return
         }
         if (!client) {
-            message.error("User ID is invalid.")
+            toast({
+                title: "User ID is invalid.",
+                status: "error",
+            })
             return;
         }
-        Modal.confirm({
-            title: "Subscribe WebPush",
-            content: "Do you really want to subscribe WebPush?\n\n" +
-                "You will only receive notifications when browser is active.",
-            onOk: async () => {
-                if (Notification.permission !== "granted") {
-                    const permission = await Notification.requestPermission();
-                    if (permission !== "granted") {
-                        message.error("Permission denied.")
-                        return
-                    }
-                }
-                const registration = await getRegistration()
-                if (!registration) {
-                    message.error("ServiceWorker is not registered.")
+
+        (async () => {
+            if (Notification.permission !== "granted") {
+                const permission = await Notification.requestPermission();
+                if (permission !== "granted") {
+                    // message.error("Permission denied.")
+                    toast({
+                        title: "Permission denied.",
+                        status: "error",
+                    })
                     return
                 }
-                const subscription = await registration.pushManager.subscribe({
-                    userVisibleOnly: true,
-                    applicationServerKey: WEB_PUSH_PUBLIC_KEY
-                })
-                if (!subscription) {
-                    message.error("Get subscription failed.")
-                    return
-                }
-
-                client.register("WebPush", JSON.stringify(subscription), deviceID!)
-                    .then(() => {
-                        setSubscribed(true)
-                        message.success("Subscribed.")
-                    })
-                    .catch((e: Error) => {
-                        console.error(e)
-                        message.error("Save subscription failed.")
-                    })
-
-            },
-            onCancel: () => {
             }
-        })
+            const registration = await getRegistration()
+            if (!registration) {
+                // message.error("ServiceWorker is not registered.")
+                toast({
+                    title: "ServiceWorker is not registered.",
+                    status: "error",
+                })
+
+                return
+            }
+            const subscription = await registration.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: WEB_PUSH_PUBLIC_KEY
+            })
+            if (!subscription) {
+                toast({
+                    title: "Get subscription failed.",
+                    status: "error",
+                })
+                return
+            }
+
+            client.register("WebPush", JSON.stringify(subscription), deviceID!)
+                .then(() => {
+                    setSubscribed(true)
+                    // message.success("Subscribed.")
+                    toast({
+                        title: "Subscribed.",
+                        status: "success",
+                    })
+                })
+                .catch((e: Error) => {
+                    console.error(e)
+                    // message.error("Save subscription failed.")
+                    toast({
+                        title: "Save subscription failed.",
+                        status: "error",
+                    })
+                })
+        })()
+
     }
 
     return (
         <main>
-            <Card
-                title="Send Notification"
-            >
-                <Input.Group>
+            <Card>
+                <CardHeader>Send Notification</CardHeader>
+                <CardBody>
                     <div style={{width: "100%", display: "inline-flex"}}>
                         <Input
                             value={userId}
-                            status={client ? '' : 'error'}
+                            isInvalid={client === null}
                             placeholder="User ID"
                             onChange={(e) => {
                                 setUserId(() => e.target.value)
@@ -132,7 +165,7 @@ function Send() {
                         }}
                         style={{width: '100%'}}
                     />
-                    <TextArea
+                    <Textarea
                         value={long}
                         placeholder="Notification Long Content"
                         onChange={(e) => {
@@ -141,23 +174,44 @@ function Send() {
                         rows={3}
                         style={{width: '100%'}}
                     />
-                </Input.Group>
-                <div style={{marginTop: '10px'}}>
+                </CardBody>
+                <CardFooter
+                    justifyContent={"space-between"}
+                >
                     {!subscribed && <Button
-                        type="primary"
-                        style={{float: 'left'}}
                         onClick={subscribe}
                         disabled={!client}
                     >Subscribe</Button>}
 
                     <Button
-                        type="primary"
-                        style={{float: 'right'}}
                         onClick={submit}
                         disabled={(!client) || (!content)}
                     >Notify</Button>
-                </div>
+                </CardFooter>
             </Card>
+            <AlertDialog
+                leastDestructiveRef={cancelDialogRef}
+                isOpen={isDialogOpen}
+                onClose={onDialogClose}
+                closeOnEsc
+                closeOnOverlayClick={true}
+                isCentered>
+                <AlertDialogOverlay/>
+                <AlertDialogContent>
+                    <AlertDialogHeader>Subscribe WebPush</AlertDialogHeader>
+                    <AlertDialogCloseButton/>
+                    <AlertDialogBody>
+                        Do you really want to subscribe WebPush?
+                        You will only receive notifications when browser is active.
+                    </AlertDialogBody>
+                    <Button ref={cancelDialogRef} onClick={onDialogClose}>
+                        No
+                    </Button>
+                    <Button colorScheme='green' ml={3}>
+                        Yes
+                    </Button>
+                </AlertDialogContent>
+            </AlertDialog>
         </main>
     );
 }
