@@ -30,7 +30,7 @@ specifiers:
   web-vitals: 3.1.0
   workbox-core: 6.5.4
   workbox-precaching: 6.5.4
-  znotify: 0.7.1
+  znotify: 0.8.0
 
 devDependencies:
   '@babel/core': 7.20.7
@@ -62,7 +62,7 @@ devDependencies:
   web-vitals: 3.1.0
   workbox-core: 6.5.4
   workbox-precaching: 6.5.4
-  znotify: 0.7.1
+  znotify: 0.8.0
 
 packages:
 
@@ -7030,8 +7030,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /znotify/0.7.1:
-    resolution: {integrity: sha512-wQ1B2lQplWKznTw6Lj0koRHnrhcsMwTWEyWwOg6pXVL+ChXksKMy1nAMOFK51I24OeuqL9VwpDF4wPsV7yFtKA==}
+  /znotify/0.8.0:
+    resolution: {integrity: sha512-W4xM4ys7TtY1he2UFn3MOPp8kN79GuZjFyw1ndSzOOOgDouersIN6FzmGJR8iqDhe1VjRzYU694Inpc4pyGMxA==}
     engines: {node: ' >=14.13.1 || >=16.0.0'}
     dependencies:
       axios: 1.2.2
