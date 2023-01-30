@@ -22,7 +22,7 @@ specifiers:
   react-router-dom: 6.8.0
   react-use: 17.4.0
   rollup-plugin-visualizer: 5.9.0
-  terser: 5.16.1
+  terser: 5.16.2
   typescript: 4.9.4
   uuid: 9.0.0
   vite: 4.0.4
@@ -54,10 +54,10 @@ devDependencies:
   react-router-dom: 6.8.0_biqbaboplfbrettd7655fr4n2y
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
   rollup-plugin-visualizer: 5.9.0
-  terser: 5.16.1
+  terser: 5.16.2
   typescript: 4.9.4
   uuid: 9.0.0
-  vite: 4.0.4_25ccpcpgpj6lg6lpj5keiqybuq
+  vite: 4.0.4_rl4x3bcugquqads2at2lt5idjq
   vite-plugin-pwa: 0.14.1_vite@4.0.4
   web-vitals: 3.1.1
   workbox-core: 6.5.4
@@ -3357,7 +3357,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.12
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.0.4_25ccpcpgpj6lg6lpj5keiqybuq
+      vite: 4.0.4_rl4x3bcugquqads2at2lt5idjq
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6114,7 +6114,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.16.1
+      terser: 5.16.2
     dev: true
 
   /rollup-plugin-visualizer/5.9.0:
@@ -6446,8 +6446,8 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser/5.16.1:
-    resolution: {integrity: sha512-xvQfyfA1ayT0qdK47zskQgRZeWLoOQ8JQ6mIgRGVNwZKdQMU+5FkCBjmv4QjcrTzyZquRw2FVtlJSRUmMKQslw==}
+  /terser/5.16.2:
+    resolution: {integrity: sha512-JKuM+KvvWVqT7muHVyrwv7FVRPnmHDwF6XwoIxdbF5Witi0vu99RYpxDexpJndXt3jbZZmmWr2/mQa6HvSNdSg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -6750,7 +6750,7 @@ packages:
       fast-glob: 3.2.12
       pretty-bytes: 6.0.0
       rollup: 3.9.0
-      vite: 4.0.4_25ccpcpgpj6lg6lpj5keiqybuq
+      vite: 4.0.4_rl4x3bcugquqads2at2lt5idjq
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
@@ -6758,7 +6758,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite/4.0.4_25ccpcpgpj6lg6lpj5keiqybuq:
+  /vite/4.0.4_rl4x3bcugquqads2at2lt5idjq:
     resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6789,7 +6789,7 @@ packages:
       postcss: 8.4.20
       resolve: 1.22.1
       rollup: 3.9.0
-      terser: 5.16.1
+      terser: 5.16.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
