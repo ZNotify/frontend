@@ -10,7 +10,7 @@ specifiers:
   '@types/node': 18.14.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  '@types/uuid': 9.0.0
+  '@types/uuid': 9.0.1
   '@vitejs/plugin-react': 3.1.0
   eslint: 8.34.0
   eslint-config-react-app: 7.0.1
@@ -42,7 +42,7 @@ devDependencies:
   '@types/node': 18.14.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  '@types/uuid': 9.0.0
+  '@types/uuid': 9.0.1
   '@vitejs/plugin-react': 3.1.0_vite@4.1.4
   eslint: 8.34.0
   eslint-config-react-app: 7.0.1_nfjtoz4xsejqu2cdw43v67373u
@@ -3190,8 +3190,8 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
-  /@types/uuid/9.0.0:
-    resolution: {integrity: sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==}
+  /@types/uuid/9.0.1:
+    resolution: {integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.47.1_qjrx5nvn4nrnk4qygld6c435qm:
