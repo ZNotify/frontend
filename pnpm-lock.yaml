@@ -27,7 +27,7 @@ specifiers:
   uuid: 9.0.0
   vite: 4.1.4
   vite-plugin-pwa: 0.14.4
-  web-vitals: 3.1.1
+  web-vitals: 3.3.0
   workbox-core: 6.5.4
   workbox-precaching: 6.5.4
   znotify: 0.9.1
@@ -59,7 +59,7 @@ devDependencies:
   uuid: 9.0.0
   vite: 4.1.4_4rzcf3gjuq5bysdex2jt2r4oke
   vite-plugin-pwa: 0.14.4_vite@4.1.4
-  web-vitals: 3.1.1
+  web-vitals: 3.3.0
   workbox-core: 6.5.4
   workbox-precaching: 6.5.4
   znotify: 0.9.1
@@ -6736,8 +6736,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /web-vitals/3.1.1:
-    resolution: {integrity: sha512-qvllU+ZeQChqzBhZ1oyXmWsjJ8a2jHYpH8AMaVuf29yscOPZfTQTjQFRX6+eADTdsDE8IanOZ0cetweHMs8/2A==}
+  /web-vitals/3.3.0:
+    resolution: {integrity: sha512-GZsEmJBNclIpViS/7QVOTr7Kbt4BgLeR7kQ5zCCtJVuiWsA+K6xTXaoEXssvl8yYFICEyNmA2Nr+vgBYTnS4bA==}
     dev: true
 
   /webidl-conversions/4.0.2:
