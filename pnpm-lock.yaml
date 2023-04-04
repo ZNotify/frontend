@@ -80,8 +80,8 @@ devDependencies:
     specifier: 0.14.7
     version: 0.14.7(vite@4.2.1)(workbox-build@6.5.4)(workbox-window@6.5.4)
   web-vitals:
-    specifier: 3.3.0
-    version: 3.3.0
+    specifier: 3.3.1
+    version: 3.3.1
   workbox-core:
     specifier: 6.5.4
     version: 6.5.4
@@ -6790,8 +6790,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /web-vitals@3.3.0:
-    resolution: {integrity: sha512-GZsEmJBNclIpViS/7QVOTr7Kbt4BgLeR7kQ5zCCtJVuiWsA+K6xTXaoEXssvl8yYFICEyNmA2Nr+vgBYTnS4bA==}
+  /web-vitals@3.3.1:
+    resolution: {integrity: sha512-LTfY5GjcY3ngFzNsYFSYL+AmVmlWrzPTUxSMDis2rZbf+SzT7HH3NH4Y/l45XOlrAIunOBeURN9qtBHkRskAiA==}
     dev: true
 
   /webidl-conversions@4.0.2:
