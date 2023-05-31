@@ -36,8 +36,8 @@
     "vite": "4.3.9",
     "vite-plugin-pwa": "0.15.2",
     "web-vitals": "3.3.2",
-    "workbox-core": "6.6.1",
-    "workbox-precaching": "6.6.1",
+    "workbox-core": "7.0.0",
+    "workbox-precaching": "7.0.0",
     "znotify": "0.9.1"
   },
   "eslintConfig": {
