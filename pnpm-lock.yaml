@@ -81,8 +81,8 @@ devDependencies:
     specifier: 4.3.9
     version: 4.3.9(@types/node@18.16.16)(less@4.1.3)(terser@5.17.7)
   vite-plugin-pwa:
-    specifier: 0.16.1
-    version: 0.16.1(vite@4.3.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
+    specifier: 0.16.2
+    version: 0.16.2(vite@4.3.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
   web-vitals:
     specifier: 3.3.2
     version: 3.3.2
@@ -6713,8 +6713,8 @@ packages:
       vfile-message: 3.1.3
     dev: true
 
-  /vite-plugin-pwa@0.16.1(vite@4.3.9)(workbox-build@7.0.0)(workbox-window@7.0.0):
-    resolution: {integrity: sha512-OdD+ck+jiCkeUQPwXCNttR62ZC2On4wasn+03Qyx0x1bLGv1IXgl59WexpWMbgKD7jZVjozWGcy3etRJJzwsvA==}
+  /vite-plugin-pwa@0.16.2(vite@4.3.9)(workbox-build@7.0.0)(workbox-window@7.0.0):
+    resolution: {integrity: sha512-MB/0UjZ06w8l6PqMehmJvejCHOvDT563LSo/CLxn0MkT6+Qk0TeytAeAWyn2S/dwXVIUYYmr8s67HJiSA7dNLw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
