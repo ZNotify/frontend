@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -69,8 +69,8 @@ devDependencies:
     specifier: 5.9.2
     version: 5.9.2(rollup@2.79.1)
   terser:
-    specifier: 5.17.7
-    version: 5.17.7
+    specifier: 5.18.0
+    version: 5.18.0
   typescript:
     specifier: 5.1.3
     version: 5.1.3
@@ -79,7 +79,7 @@ devDependencies:
     version: 9.0.0
   vite:
     specifier: 4.3.9
-    version: 4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.17.7)
+    version: 4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.18.0)
   vite-plugin-pwa:
     specifier: 0.16.4
     version: 0.16.4(vite@4.3.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
@@ -3340,7 +3340,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.21.0(@babel/core@7.22.5)
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.22.5)
       react-refresh: 0.14.0
-      vite: 4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.17.7)
+      vite: 4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.18.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6075,7 +6075,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.17.7
+      terser: 5.18.0
     dev: true
 
   /rollup-plugin-visualizer@5.9.2(rollup@2.79.1):
@@ -6412,8 +6412,8 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser@5.17.7:
-    resolution: {integrity: sha512-/bi0Zm2C6VAexlGgLlVxA0P2lru/sdLyfCVaRMfKVo9nWxbmz7f/sD8VPybPeSUJaJcwmCJis9pBIhcVcG1QcQ==}
+  /terser@5.18.0:
+    resolution: {integrity: sha512-pdL757Ig5a0I+owA42l6tIuEycRuM7FPY4n62h44mRLRfnOxJkkOHd6i89dOpwZlpF6JXBwaAHF6yWzFrt+QyA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -6717,14 +6717,14 @@ packages:
       debug: 4.3.4
       fast-glob: 3.2.12
       pretty-bytes: 6.0.0
-      vite: 4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.17.7)
+      vite: 4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.18.0)
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.17.7):
+  /vite@4.3.9(@types/node@18.16.17)(less@4.1.3)(terser@5.18.0):
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6754,7 +6754,7 @@ packages:
       less: 4.1.3
       postcss: 8.4.23
       rollup: 3.21.0
-      terser: 5.17.7
+      terser: 5.18.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
