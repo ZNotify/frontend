@@ -35,7 +35,7 @@
     "uuid": "9.0.0",
     "vite": "4.4.2",
     "vite-plugin-pwa": "0.16.4",
-    "web-vitals": "3.3.2",
+    "web-vitals": "3.4.0",
     "workbox-core": "7.0.0",
     "workbox-precaching": "7.0.0",
     "znotify": "0.9.1"
