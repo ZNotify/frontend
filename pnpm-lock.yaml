@@ -33,8 +33,8 @@ devDependencies:
     specifier: 18.0.11
     version: 18.0.11
   '@types/uuid':
-    specifier: 9.0.6
-    version: 9.0.6
+    specifier: 9.0.7
+    version: 9.0.7
   '@vitejs/plugin-react':
     specifier: 4.1.1
     version: 4.1.1(vite@4.5.0)
@@ -3251,8 +3251,8 @@ packages:
     resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
     dev: true
 
-  /@types/uuid@9.0.6:
-    resolution: {integrity: sha512-BT2Krtx4xaO6iwzwMFUYvWBWkV2pr37zD68Vmp1CDV196MzczBRxuEpD6Pr395HAgebC/co7hOphs53r8V7jew==}
+  /@types/uuid@9.0.7:
+    resolution: {integrity: sha512-WUtIVRUZ9i5dYXefDEAI7sh9/O7jGvHg7Df/5O/gtH3Yabe5odI3UWopVR1qbPXQtvOxWu3mM4XxlYeZtMWF4g==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@5.47.1(@typescript-eslint/parser@5.47.1)(eslint@8.53.0)(typescript@5.2.2):
