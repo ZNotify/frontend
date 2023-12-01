@@ -24,7 +24,7 @@
     "react-dom": "18.2.0",
     "react-markdown": "9.0.1",
     "react-router-dom": "6.20.0",
-    "react-use": "17.4.1",
+    "react-use": "17.4.2",
     "rollup-plugin-visualizer": "5.9.3",
     "@chakra-ui/react": "2.8.2",
     "@emotion/react": "11.11.1",
