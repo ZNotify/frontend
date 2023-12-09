@@ -66,8 +66,8 @@ devDependencies:
     specifier: 17.4.2
     version: 17.4.2(react-dom@18.2.0)(react@18.2.0)
   rollup-plugin-visualizer:
-    specifier: 5.10.0
-    version: 5.10.0(rollup@2.79.1)
+    specifier: 5.11.0
+    version: 5.11.0(rollup@2.79.1)
   terser:
     specifier: 5.26.0
     version: 5.26.0
@@ -6262,8 +6262,8 @@ packages:
       terser: 5.26.0
     dev: true
 
-  /rollup-plugin-visualizer@5.10.0(rollup@2.79.1):
-    resolution: {integrity: sha512-N4AkNL0qFvipegbDJ0kupS+8eKGjL0q+lYwV46NflLX/B8Rh73wz3kCIdg50bR6XVhNcaMA4Eb519xtm90Ckfg==}
+  /rollup-plugin-visualizer@5.11.0(rollup@2.79.1):
+    resolution: {integrity: sha512-exM0Ms2SN3AgTzMeW7y46neZQcyLY7eKwWAop1ZoRTCZwyrIRdMMJ6JjToAJbML77X/9N8ZEpmXG4Z/Clb9k8g==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
