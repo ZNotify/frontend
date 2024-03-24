@@ -33,7 +33,7 @@
     "terser": "5.29.2",
     "typescript": "5.4.3",
     "uuid": "9.0.1",
-    "vite": "5.2.4",
+    "vite": "5.2.5",
     "vite-plugin-pwa": "0.19.7",
     "web-vitals": "3.5.2",
     "workbox-core": "7.0.0",
