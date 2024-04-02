@@ -69,8 +69,8 @@ devDependencies:
     specifier: 5.12.0
     version: 5.12.0(rollup@2.79.1)
   terser:
-    specifier: 5.30.1
-    version: 5.30.1
+    specifier: 5.30.2
+    version: 5.30.2
   typescript:
     specifier: 5.4.3
     version: 5.4.3
@@ -79,7 +79,7 @@ devDependencies:
     version: 9.0.1
   vite:
     specifier: 5.2.7
-    version: 5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.1)
+    version: 5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.2)
   vite-plugin-pwa:
     specifier: 0.19.7
     version: 0.19.7(vite@5.2.7)(workbox-build@7.0.0)(workbox-window@7.0.0)
@@ -3497,7 +3497,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.24.3)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.1)
+      vite: 5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6230,7 +6230,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.30.1
+      terser: 5.30.2
     dev: true
 
   /rollup-plugin-visualizer@5.12.0(rollup@2.79.1):
@@ -6578,8 +6578,8 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser@5.30.1:
-    resolution: {integrity: sha512-PJhOnRttZqqmIujxOQOMu4QuFGvh43lR7Youln3k6OJvmxwZ5FxK5rbCEh8XABRCpLf7ZnhrZuclCNCASsScnA==}
+  /terser@5.30.2:
+    resolution: {integrity: sha512-vTDjRKYKip4dOFL5VizdoxHTYDfEXPdz5t+FbxCC5Rp2s+KbEO8w5wqMDPgj7CtFKZuzq7PXv28fZoXfqqBVuw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -6871,14 +6871,14 @@ packages:
       debug: 4.3.4
       fast-glob: 3.3.2
       pretty-bytes: 6.1.1
-      vite: 5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.1)
+      vite: 5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.2)
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.1):
+  /vite@5.2.7(@types/node@20.12.2)(less@4.2.0)(terser@5.30.2):
     resolution: {integrity: sha512-k14PWOKLI6pMaSzAuGtT+Cf0YmIx12z9YGon39onaJNy8DLBfBJrzg9FQEmkAM5lpHBZs9wksWAsyF/HkpEwJA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -6911,7 +6911,7 @@ packages:
       less: 4.2.0
       postcss: 8.4.38
       rollup: 4.13.0
-      terser: 5.30.1
+      terser: 5.30.2
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
