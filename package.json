@@ -31,7 +31,7 @@
     "@emotion/styled": "11.11.5",
     "framer-motion": "11.0.25",
     "terser": "5.30.3",
-    "typescript": "5.4.4",
+    "typescript": "5.4.5",
     "uuid": "9.0.1",
     "vite": "5.2.8",
     "vite-plugin-pwa": "0.19.8",
