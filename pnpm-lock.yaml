@@ -87,8 +87,8 @@ importers:
         specifier: 0.20.0
         version: 0.20.0(vite@5.2.13(@types/node@20.14.2)(less@4.2.0)(terser@5.31.1))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.1
+        version: 4.1.1
       workbox-core:
         specifier: 7.1.0
         version: 7.1.0
@@ -3664,8 +3664,8 @@ packages:
       terser:
         optional: true
 
-  web-vitals@4.1.0:
-    resolution: {integrity: sha512-wz5ubPZK7DSKrlQvjsaCqdfa+9AjAYoUzj9GDzUmBTdfyfyl1fOIjfTh46DGKM8MdN+lcbNY8ObXo6TmHqRzVw==}
+  web-vitals@4.1.1:
+    resolution: {integrity: sha512-wW3cdBZ56Rc5Az8p1Pw6g1zHU7X8HPLigQjD5Z0ef3EG9SPo4iO7RxsiU87aH3xaaEw0if6Ven2s+zlNGiXYqw==}
 
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -7959,7 +7959,7 @@ snapshots:
       less: 4.2.0
       terser: 5.31.1
 
-  web-vitals@4.1.0: {}
+  web-vitals@4.1.1: {}
 
   webidl-conversions@4.0.2: {}
 
