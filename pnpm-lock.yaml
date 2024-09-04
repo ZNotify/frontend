@@ -84,8 +84,8 @@ importers:
         specifier: 5.4.3
         version: 5.4.3(@types/node@20.16.5)(less@4.2.0)(terser@5.31.6)
       vite-plugin-pwa:
-        specifier: 0.20.4
-        version: 0.20.4(vite@5.4.3(@types/node@20.16.5)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        specifier: 0.20.5
+        version: 0.20.5(vite@5.4.3(@types/node@20.16.5)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 4.2.3
         version: 4.2.3
@@ -3642,8 +3642,8 @@ packages:
   vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
 
-  vite-plugin-pwa@0.20.4:
-    resolution: {integrity: sha512-AreLrlstKCn56bzfIIhg5P4p12QNsYmHfKiSlrVk9FK8028IfBFeMvhQNSumBgQmb4RaHLm0SaOLvh/rzOImvw==}
+  vite-plugin-pwa@0.20.5:
+    resolution: {integrity: sha512-aweuI/6G6n4C5Inn0vwHumElU/UEpNuO+9iZzwPZGTCH87TeZ6YFMrEY6ZUBQdIHHlhTsbMDryFARcSuOdsz9Q==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^0.2.6
@@ -3917,7 +3917,7 @@ snapshots:
       '@babel/core': 7.25.2
       '@babel/helper-compilation-targets': 7.24.8
       '@babel/helper-plugin-utils': 7.24.7
-      debug: 4.3.4
+      debug: 4.3.6
       lodash.debounce: 4.0.8
       resolve: 1.22.1
       semver: 6.3.1
@@ -4688,7 +4688,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.7
       '@babel/parser': 7.24.8
       '@babel/types': 7.25.2
-      debug: 4.3.4
+      debug: 4.3.6
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -5841,7 +5841,7 @@ snapshots:
       '@typescript-eslint/scope-manager': 5.47.1
       '@typescript-eslint/type-utils': 5.47.1(eslint@9.9.1)(typescript@5.5.4)
       '@typescript-eslint/utils': 5.47.1(eslint@9.9.1)(typescript@5.5.4)
-      debug: 4.3.4
+      debug: 4.3.6
       eslint: 9.9.1
       ignore: 5.2.4
       natural-compare-lite: 1.4.0
@@ -5866,7 +5866,7 @@ snapshots:
       '@typescript-eslint/scope-manager': 5.47.1
       '@typescript-eslint/types': 5.47.1
       '@typescript-eslint/typescript-estree': 5.47.1(typescript@5.5.4)
-      debug: 4.3.4
+      debug: 4.3.6
       eslint: 9.9.1
     optionalDependencies:
       typescript: 5.5.4
@@ -5882,7 +5882,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 5.47.1(typescript@5.5.4)
       '@typescript-eslint/utils': 5.47.1(eslint@9.9.1)(typescript@5.5.4)
-      debug: 4.3.4
+      debug: 4.3.6
       eslint: 9.9.1
       tsutils: 3.21.0(typescript@5.5.4)
     optionalDependencies:
@@ -5896,7 +5896,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 5.47.1
       '@typescript-eslint/visitor-keys': 5.47.1
-      debug: 4.3.4
+      debug: 4.3.6
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.3.8
@@ -7193,7 +7193,7 @@ snapshots:
   micromark@4.0.0:
     dependencies:
       '@types/debug': 4.1.7
-      debug: 4.3.4
+      debug: 4.3.6
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.0
@@ -7967,7 +7967,7 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@0.20.4(vite@5.4.3(@types/node@20.16.5)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@0.20.5(vite@5.4.3(@types/node@20.16.5)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
       debug: 4.3.6
       pretty-bytes: 6.1.1
