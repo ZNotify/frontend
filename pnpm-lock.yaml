@@ -84,8 +84,8 @@ importers:
         specifier: 5.4.3
         version: 5.4.3(@types/node@20.16.4)(less@4.2.0)(terser@5.31.6)
       vite-plugin-pwa:
-        specifier: 0.20.3
-        version: 0.20.3(vite@5.4.3(@types/node@20.16.4)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        specifier: 0.20.4
+        version: 0.20.4(vite@5.4.3(@types/node@20.16.4)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 4.2.3
         version: 4.2.3
@@ -2105,6 +2105,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.3.6:
+    resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   decode-named-character-reference@1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
 
@@ -3633,11 +3642,11 @@ packages:
   vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
 
-  vite-plugin-pwa@0.20.3:
-    resolution: {integrity: sha512-aqCOWWSwfX4o6H+6NyEvhzFs3eENBqYFKUK4FYx5OZ3jGio73BE189bPz9+BBgjHBLozldQVSmZTHySVC2zNkg==}
+  vite-plugin-pwa@0.20.4:
+    resolution: {integrity: sha512-AreLrlstKCn56bzfIIhg5P4p12QNsYmHfKiSlrVk9FK8028IfBFeMvhQNSumBgQmb4RaHLm0SaOLvh/rzOImvw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@vite-pwa/assets-generator': ^0.2.4
+      '@vite-pwa/assets-generator': ^0.2.6
       vite: ^3.1.0 || ^4.0.0 || ^5.0.0
       workbox-build: ^7.1.0
       workbox-window: ^7.1.0
@@ -6236,6 +6245,10 @@ snapshots:
     dependencies:
       ms: 2.1.2
 
+  debug@4.3.6:
+    dependencies:
+      ms: 2.1.2
+
   decode-named-character-reference@1.0.2:
     dependencies:
       character-entities: 2.0.2
@@ -7954,9 +7967,9 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@0.20.3(vite@5.4.3(@types/node@20.16.4)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@0.20.4(vite@5.4.3(@types/node@20.16.4)(less@4.2.0)(terser@5.31.6))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.6
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.0
       vite: 5.4.3(@types/node@20.16.4)(less@4.2.0)(terser@5.31.6)
