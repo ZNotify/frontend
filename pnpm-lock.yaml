@@ -40,7 +40,7 @@ importers:
         version: 10.0.0
       '@vitejs/plugin-react':
         specifier: 4.3.4
-        version: 4.3.4(vite@6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))
+        version: 4.3.4(vite@6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))
       eslint:
         specifier: 9.15.0
         version: 9.15.0
@@ -81,11 +81,11 @@ importers:
         specifier: 11.0.3
         version: 11.0.3
       vite:
-        specifier: 6.0.0
-        version: 6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0)
+        specifier: 6.0.1
+        version: 6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0)
       vite-plugin-pwa:
         specifier: 0.21.0
-        version: 0.21.0(vite@6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        version: 0.21.0(vite@6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 4.2.4
         version: 4.2.4
@@ -3310,8 +3310,8 @@ packages:
       '@vite-pwa/assets-generator':
         optional: true
 
-  vite@6.0.0:
-    resolution: {integrity: sha512-Q2+5yQV79EdnpbNxjD3/QHVMCBaQ3Kpd4/uL51UGuh38bIIM+s4o3FqyCzRvTRwFb+cWIUeZvaWwS9y2LD2qeQ==}
+  vite@6.0.1:
+    resolution: {integrity: sha512-Ldn6gorLGr4mCdFnmeAOLweJxZ34HjKnDm4HGo6P66IEqTxQb36VEdFJQENKxWjupNfoIjvRUnswjn1hpYEpjQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -4959,14 +4959,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.4(vite@6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))':
+  '@vitejs/plugin-react@4.3.4(vite@6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0)
+      vite: 6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -7372,7 +7372,7 @@ snapshots:
     dependencies:
       browserslist: 4.24.0
       escalade: 3.1.2
-      picocolors: 1.0.1
+      picocolors: 1.1.1
 
   uqr@0.1.2: {}
 
@@ -7393,18 +7393,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@0.21.0(vite@6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@0.21.0(vite@6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
       debug: 4.3.6
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.10
-      vite: 6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0)
+      vite: 6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0)
       workbox-build: 7.0.0(@types/babel__core@7.20.5)
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@6.0.0(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0):
+  vite@6.0.1(@types/node@22.10.0)(less@4.2.1)(terser@5.36.0):
     dependencies:
       esbuild: 0.24.0
       postcss: 8.4.49
