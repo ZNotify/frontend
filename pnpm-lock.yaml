@@ -19,22 +19,22 @@ importers:
         version: 7.25.9(@babel/core@7.26.0)
       '@chakra-ui/react':
         specifier: 3.2.3
-        version: 3.2.3(@emotion/react@11.13.5(@types/react@18.3.14)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 3.2.3(@emotion/react@11.13.5(@types/react@19.0.0)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@emotion/react':
         specifier: 11.13.5
-        version: 11.13.5(@types/react@18.3.14)(react@19.0.0)
+        version: 11.13.5(@types/react@19.0.0)(react@19.0.0)
       '@emotion/styled':
         specifier: 11.13.5
-        version: 11.13.5(@emotion/react@11.13.5(@types/react@18.3.14)(react@19.0.0))(@types/react@18.3.14)(react@19.0.0)
+        version: 11.13.5(@emotion/react@11.13.5(@types/react@19.0.0)(react@19.0.0))(@types/react@19.0.0)(react@19.0.0)
       '@types/node':
         specifier: 22.10.1
         version: 22.10.1
       '@types/react':
-        specifier: 18.3.14
-        version: 18.3.14
+        specifier: 19.0.0
+        version: 19.0.0
       '@types/react-dom':
-        specifier: 18.3.2
-        version: 18.3.2
+        specifier: 19.0.0
+        version: 19.0.0
       '@types/uuid':
         specifier: 10.0.0
         version: 10.0.0
@@ -61,7 +61,7 @@ importers:
         version: 19.0.0(react@19.0.0)
       react-markdown:
         specifier: 9.0.1
-        version: 9.0.1(@types/react@18.3.14)(react@19.0.0)
+        version: 9.0.1(@types/react@19.0.0)(react@19.0.0)
       react-router-dom:
         specifier: 7.0.2
         version: 7.0.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1289,14 +1289,11 @@ packages:
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
 
-  '@types/prop-types@15.7.5':
-    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+  '@types/react-dom@19.0.0':
+    resolution: {integrity: sha512-1KfiQKsH1o00p9m5ag12axHQSb3FOU9H20UTrujVSkNhuCrRHiQWFqgEnTNK5ZNfnzZv8UWrnXVqCmCF9fgY3w==}
 
-  '@types/react-dom@18.3.2':
-    resolution: {integrity: sha512-Fqp+rcvem9wEnGr3RY8dYNvSQ8PoLqjZ9HLgaPUOjJJD120uDyOxOjc/39M4Kddp9JQCxpGQbnhVQF0C0ncYVg==}
-
-  '@types/react@18.3.14':
-    resolution: {integrity: sha512-NzahNKvjNhVjuPBQ+2G7WlxstQ+47kXZNHlUvFakDViuIEfGY926GqhMueQFZ7woG+sPiQKlF36XfrIUVSUfFg==}
+  '@types/react@19.0.0':
+    resolution: {integrity: sha512-MY3oPudxvMYyesqs/kW1Bh8y9VqSmf+tzqw3ae8a9DZW68pUe3zAdHeI1jc6iAysuRdACnVknHP8AhwD4/dxtg==}
 
   '@types/resolve@1.17.1':
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
@@ -4396,11 +4393,11 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@chakra-ui/react@3.2.3(@emotion/react@11.13.5(@types/react@18.3.14)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@chakra-ui/react@3.2.3(@emotion/react@11.13.5(@types/react@19.0.0)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@ark-ui/react': 4.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@emotion/is-prop-valid': 1.3.1
-      '@emotion/react': 11.13.5(@types/react@18.3.14)(react@19.0.0)
+      '@emotion/react': 11.13.5(@types/react@19.0.0)(react@19.0.0)
       '@emotion/serialize': 1.3.2
       '@emotion/use-insertion-effect-with-fallbacks': 1.1.0(react@19.0.0)
       '@emotion/utils': 1.4.1
@@ -4441,7 +4438,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.13.5(@types/react@18.3.14)(react@19.0.0)':
+  '@emotion/react@11.13.5(@types/react@19.0.0)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.20.7
       '@emotion/babel-plugin': 11.13.5
@@ -4453,7 +4450,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 19.0.0
     optionalDependencies:
-      '@types/react': 18.3.14
+      '@types/react': 19.0.0
     transitivePeerDependencies:
       - supports-color
 
@@ -4475,18 +4472,18 @@ snapshots:
 
   '@emotion/sheet@1.4.0': {}
 
-  '@emotion/styled@11.13.5(@emotion/react@11.13.5(@types/react@18.3.14)(react@19.0.0))(@types/react@18.3.14)(react@19.0.0)':
+  '@emotion/styled@11.13.5(@emotion/react@11.13.5(@types/react@19.0.0)(react@19.0.0))(@types/react@19.0.0)(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.20.7
       '@emotion/babel-plugin': 11.13.5
       '@emotion/is-prop-valid': 1.3.1
-      '@emotion/react': 11.13.5(@types/react@18.3.14)(react@19.0.0)
+      '@emotion/react': 11.13.5(@types/react@19.0.0)(react@19.0.0)
       '@emotion/serialize': 1.3.3
       '@emotion/use-insertion-effect-with-fallbacks': 1.1.0(react@19.0.0)
       '@emotion/utils': 1.4.2
       react: 19.0.0
     optionalDependencies:
-      '@types/react': 18.3.14
+      '@types/react': 19.0.0
     transitivePeerDependencies:
       - supports-color
 
@@ -4844,15 +4841,12 @@ snapshots:
 
   '@types/parse-json@4.0.0': {}
 
-  '@types/prop-types@15.7.5': {}
-
-  '@types/react-dom@18.3.2':
+  '@types/react-dom@19.0.0':
     dependencies:
-      '@types/react': 18.3.14
+      '@types/react': 19.0.0
 
-  '@types/react@18.3.14':
+  '@types/react@19.0.0':
     dependencies:
-      '@types/prop-types': 15.7.5
       csstype: 3.1.3
 
   '@types/resolve@1.17.1':
@@ -6902,10 +6896,10 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-markdown@9.0.1(@types/react@18.3.14)(react@19.0.0):
+  react-markdown@9.0.1(@types/react@19.0.0)(react@19.0.0):
     dependencies:
       '@types/hast': 3.0.1
-      '@types/react': 18.3.14
+      '@types/react': 19.0.0
       devlop: 1.1.0
       hast-util-to-jsx-runtime: 2.2.0
       html-url-attributes: 3.0.0
