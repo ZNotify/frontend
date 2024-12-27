@@ -69,8 +69,8 @@ importers:
         specifier: 17.6.0
         version: 17.6.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       rollup-plugin-visualizer:
-        specifier: 5.12.0
-        version: 5.12.0(rollup@2.79.1)
+        specifier: 5.13.0
+        version: 5.13.0(rollup@2.79.1)
       terser:
         specifier: 5.37.0
         version: 5.37.0
@@ -1933,10 +1933,6 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  escalade@3.1.1:
-    resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
-    engines: {node: '>=6'}
-
   escalade@3.1.2:
     resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
     engines: {node: '>=6'}
@@ -2979,13 +2975,16 @@ packages:
     peerDependencies:
       rollup: ^2.0.0
 
-  rollup-plugin-visualizer@5.12.0:
-    resolution: {integrity: sha512-8/NU9jXcHRs7Nnj07PF2o4gjxmm9lXIrZ8r175bT9dK8qoLlvKTwRMArRCMgpMGlq8CTLugRvEmyMeMXIU2pNQ==}
-    engines: {node: '>=14'}
+  rollup-plugin-visualizer@5.13.0:
+    resolution: {integrity: sha512-H/IqyYIJpDj8CfN6zDSV2y8zGBuLZFVM1wPsPOKKlQEZk9t3Dp+SeHlv3NUtOuqrfcNpRpTT3b7Z40kxz9lI4Q==}
+    engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
+      rolldown: 1.x
       rollup: 2.x || 3.x || 4.x
     peerDependenciesMeta:
+      rolldown:
+        optional: true
       rollup:
         optional: true
 
@@ -5875,8 +5874,6 @@ snapshots:
       '@esbuild/win32-ia32': 0.24.2
       '@esbuild/win32-x64': 0.24.2
 
-  escalade@3.1.1: {}
-
   escalade@3.1.2: {}
 
   escape-string-regexp@4.0.0: {}
@@ -7060,10 +7057,9 @@ snapshots:
       serialize-javascript: 4.0.0
       terser: 5.37.0
 
-  rollup-plugin-visualizer@5.12.0(rollup@2.79.1):
+  rollup-plugin-visualizer@5.13.0(rollup@2.79.1):
     dependencies:
       open: 8.4.0
-      picomatch: 2.3.1
       source-map: 0.7.4
       yargs: 17.6.2
     optionalDependencies:
@@ -7602,7 +7598,7 @@ snapshots:
   yargs@17.6.2:
     dependencies:
       cliui: 8.0.1
-      escalade: 3.1.1
+      escalade: 3.1.2
       get-caller-file: 2.0.5
       require-directory: 2.1.1
       string-width: 4.2.3
