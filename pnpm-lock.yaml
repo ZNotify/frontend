@@ -18,8 +18,8 @@ importers:
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.26.0)
       '@chakra-ui/react':
-        specifier: 3.3.1
-        version: 3.3.1(@emotion/react@11.14.0(@types/react@19.0.7)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: 3.3.3
+        version: 3.3.3(@emotion/react@11.14.0(@types/react@19.0.7)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@emotion/react':
         specifier: 11.14.0
         version: 11.14.0(@types/react@19.0.7)(react@19.0.0)
@@ -791,8 +791,8 @@ packages:
     resolution: {integrity: sha512-Z/yiTPj+lDVnF7lWeKCIJzaIkI0vYO87dMpZ4bg4TDrFe4XXLFWL1TbXU27gBP3QccxV9mZICCrnjnYlJjXHOA==}
     engines: {node: '>=6.9.0'}
 
-  '@chakra-ui/react@3.3.1':
-    resolution: {integrity: sha512-npO3gwzU8Zf6EcfUSApeSGLgts12DVScyE316uXe17i0vO9xz5QladLKN+qdzA0YnSKsefZVErLAeM9FsKk/+A==}
+  '@chakra-ui/react@3.3.3':
+    resolution: {integrity: sha512-DJ4irhO4SWnnbNGz1ez2lsHVgqQPpSOqVGo8OUJ4PHYje07DJBhgin0X+Ob2/ngSWnB7cjseh8x5sWen/kmO+g==}
     peerDependencies:
       '@emotion/react': '>=11'
       react: '>=18'
@@ -4380,7 +4380,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@chakra-ui/react@3.3.1(@emotion/react@11.14.0(@types/react@19.0.7)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@chakra-ui/react@3.3.3(@emotion/react@11.14.0(@types/react@19.0.7)(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@ark-ui/react': 4.8.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@emotion/is-prop-valid': 1.3.1
