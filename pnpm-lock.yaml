@@ -40,7 +40,7 @@ importers:
         version: 10.0.0
       '@vitejs/plugin-react':
         specifier: 4.3.4
-        version: 4.3.4(vite@6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0))
+        version: 4.3.4(vite@6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0))
       eslint:
         specifier: 9.18.0
         version: 9.18.0
@@ -51,8 +51,8 @@ importers:
         specifier: 11.18.1
         version: 11.18.1(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       less:
-        specifier: 4.2.1
-        version: 4.2.1
+        specifier: 4.2.2
+        version: 4.2.2
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -82,10 +82,10 @@ importers:
         version: 11.0.5
       vite:
         specifier: 6.0.7
-        version: 6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0)
+        version: 6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0)
       vite-plugin-pwa:
         specifier: 0.21.1
-        version: 0.21.1(vite@6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        version: 0.21.1(vite@6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 4.2.4
         version: 4.2.4
@@ -2477,8 +2477,8 @@ packages:
   language-tags@1.0.7:
     resolution: {integrity: sha512-bSytju1/657hFjgUzPAPqszxH62ouE8nQFoFaVlIQfne4wO/wXC9A4+m8jYve7YBBvi59eq0SUpcshvG8h5Usw==}
 
-  less@4.2.1:
-    resolution: {integrity: sha512-CasaJidTIhWmjcqv0Uj5vccMI7pJgfD9lMkKtlnTHAdJdYK/7l8pM9tumLyJ0zhbD4KJLo/YvTj+xznQd5NBhg==}
+  less@4.2.2:
+    resolution: {integrity: sha512-tkuLHQlvWUTeQ3doAqnHbNn8T6WX1KA8yvbKG9x4VtKtIjHsVKQZCH11zRgAfbDAXC2UNIg/K9BYAAcEzUIrNg==}
     engines: {node: '>=6'}
     hasBin: true
 
@@ -4934,14 +4934,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.4(vite@6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0))':
+  '@vitejs/plugin-react@4.3.4(vite@6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0)
+      vite: 6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6385,7 +6385,7 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.22
 
-  less@4.2.1:
+  less@4.2.2:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
@@ -7319,18 +7319,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@0.21.1(vite@6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@0.21.1(vite@6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
       debug: 4.3.6
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.10
-      vite: 6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0)
+      vite: 6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0)
       workbox-build: 7.0.0(@types/babel__core@7.20.5)
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@6.0.7(@types/node@22.10.7)(less@4.2.1)(terser@5.37.0):
+  vite@6.0.7(@types/node@22.10.7)(less@4.2.2)(terser@5.37.0):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.4.49
@@ -7338,7 +7338,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.10.7
       fsevents: 2.3.3
-      less: 4.2.1
+      less: 4.2.2
       terser: 5.37.0
 
   web-vitals@4.2.4: {}
