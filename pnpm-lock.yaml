@@ -60,8 +60,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       react-markdown:
-        specifier: 9.0.3
-        version: 9.0.3(@types/react@19.0.10)(react@19.0.0)
+        specifier: 9.1.0
+        version: 9.1.0(@types/react@19.0.10)(react@19.0.0)
       react-router-dom:
         specifier: 7.2.0
         version: 7.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2861,8 +2861,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-markdown@9.0.3:
-    resolution: {integrity: sha512-Yk7Z94dbgYTOrdk41Z74GoKA7rThnsbbqBTRYuxoe08qvfQ9tJVhmAKw6BJS/ZORG7kTy/s1QvYzSuaoBA1qfw==}
+  react-markdown@9.1.0:
+    resolution: {integrity: sha512-xaijuJB0kzGiUdG7nc2MOMDUDBWPyGAjZtUrow9XxUeua8IqeP+VlIfAZ3bphpcLTnSZXz6z9jcVC/TCwbfgdw==}
     peerDependencies:
       '@types/react': '>=18'
       react: '>=18'
@@ -6901,9 +6901,10 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-markdown@9.0.3(@types/react@19.0.10)(react@19.0.0):
+  react-markdown@9.1.0(@types/react@19.0.10)(react@19.0.0):
     dependencies:
       '@types/hast': 3.0.1
+      '@types/mdast': 4.0.1
       '@types/react': 19.0.10
       devlop: 1.1.0
       hast-util-to-jsx-runtime: 2.2.0
