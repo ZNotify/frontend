@@ -19,7 +19,7 @@
     "@vitejs/plugin-react": "4.3.4",
     "eslint": "9.24.0",
     "eslint-config-react-app": "7.0.1",
-    "less": "4.2.2",
+    "less": "4.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-markdown": "10.1.0",
