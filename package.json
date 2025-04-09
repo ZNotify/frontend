@@ -14,7 +14,7 @@
     "@babel/plugin-transform-react-jsx": "7.25.9",
     "@types/node": "22.14.0",
     "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
+    "@types/react-dom": "19.1.2",
     "@types/uuid": "10.0.0",
     "@vitejs/plugin-react": "4.3.4",
     "eslint": "9.24.0",
