@@ -29,7 +29,7 @@
     "@chakra-ui/react": "3.15.1",
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.0",
-    "framer-motion": "12.6.5",
+    "framer-motion": "12.7.2",
     "terser": "5.39.0",
     "typescript": "5.8.3",
     "uuid": "11.1.0",
