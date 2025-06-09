@@ -40,7 +40,7 @@ importers:
         version: 10.0.0
       '@vitejs/plugin-react':
         specifier: 4.5.1
-        version: 4.5.1(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0))
+        version: 4.5.1(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0))
       eslint:
         specifier: 9.28.0
         version: 9.28.0
@@ -72,8 +72,8 @@ importers:
         specifier: 6.0.3
         version: 6.0.3(rollup@2.79.1)
       terser:
-        specifier: 5.41.0
-        version: 5.41.0
+        specifier: 5.42.0
+        version: 5.42.0
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -82,10 +82,10 @@ importers:
         version: 11.1.0
       vite:
         specifier: 6.3.5
-        version: 6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0)
+        version: 6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0)
       vite-plugin-pwa:
         specifier: 1.0.0
-        version: 1.0.0(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        version: 1.0.0(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 5.0.2
         version: 5.0.2
@@ -3183,8 +3183,8 @@ packages:
     resolution: {integrity: sha512-G13vtMYPT/J8A4X2SjdtBTphZlrp1gKv6hZiOjw14RCWg6GbHuQBGtjlx75xLbYV/wEc0D7G5K4rxKP/cXk8Bw==}
     engines: {node: '>=10'}
 
-  terser@5.41.0:
-    resolution: {integrity: sha512-H406eLPXpZbAX14+B8psIuvIr8+3c+2hkuYzpMkoE0ij+NdsVATbA78vb8neA/eqrj7rywa2pIkdmWRsXW6wmw==}
+  terser@5.42.0:
+    resolution: {integrity: sha512-UYCvU9YQW2f/Vwl+P0GfhxJxbUGLwd+5QrrGgLajzWAtC/23AX0vcise32kkP7Eu0Wu9VlzzHAXkLObgjQfFlQ==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4998,7 +4998,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.5.1(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0))':
+  '@vitejs/plugin-react@4.5.1(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0))':
     dependencies:
       '@babel/core': 7.27.4
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.27.4)
@@ -5006,7 +5006,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.9
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0)
+      vite: 6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -7086,7 +7086,7 @@ snapshots:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.41.0
+      terser: 5.42.0
 
   rollup-plugin-visualizer@6.0.3(rollup@2.79.1):
     dependencies:
@@ -7294,7 +7294,7 @@ snapshots:
       type-fest: 0.16.0
       unique-string: 2.0.0
 
-  terser@5.41.0:
+  terser@5.42.0:
     dependencies:
       '@jridgewell/source-map': 0.3.3
       acorn: 8.14.0
@@ -7439,18 +7439,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@1.0.0(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@1.0.0(vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
       debug: 4.3.6
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.10
-      vite: 6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0)
+      vite: 6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0)
       workbox-build: 7.0.0(@types/babel__core@7.20.5)
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.41.0):
+  vite@6.3.5(@types/node@22.15.30)(less@4.3.0)(terser@5.42.0):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.4.4(picomatch@4.0.2)
@@ -7462,7 +7462,7 @@ snapshots:
       '@types/node': 22.15.30
       fsevents: 2.3.3
       less: 4.3.0
-      terser: 5.41.0
+      terser: 5.42.0
 
   web-vitals@5.0.2: {}
 
