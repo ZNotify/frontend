@@ -84,8 +84,8 @@ importers:
         specifier: 7.0.6
         version: 7.0.6(@types/node@22.16.5)(less@4.4.0)(terser@5.43.1)
       vite-plugin-pwa:
-        specifier: 1.0.1
-        version: 1.0.1(vite@7.0.6(@types/node@22.16.5)(less@4.4.0)(terser@5.43.1))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        specifier: 1.0.2
+        version: 1.0.2(vite@7.0.6(@types/node@22.16.5)(less@4.4.0)(terser@5.43.1))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 5.0.3
         version: 5.0.3
@@ -3334,8 +3334,8 @@ packages:
   vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
 
-  vite-plugin-pwa@1.0.1:
-    resolution: {integrity: sha512-STyUomQbydj7vGamtgQYIJI0YsUZ3T4pJLGBQDQPhzMse6aGSncmEN21OV35PrFsmCvmtiH+Nu1JS1ke4RqBjQ==}
+  vite-plugin-pwa@1.0.2:
+    resolution: {integrity: sha512-O3UwjsCnoDclgJANoOgzzqW7SFgwXE/th2OmUP/ILxHKwzWxxKDBu+B/Xa9Cv4IgSVSnj2HgRVIJ7F15+vQFkA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^1.0.0
@@ -7487,7 +7487,7 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@1.0.1(vite@7.0.6(@types/node@22.16.5)(less@4.4.0)(terser@5.43.1))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@1.0.2(vite@7.0.6(@types/node@22.16.5)(less@4.4.0)(terser@5.43.1))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
       debug: 4.4.0
       pretty-bytes: 6.1.1
