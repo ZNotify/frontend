@@ -12,7 +12,7 @@
     "@babel/core": "7.28.3",
     "@babel/plugin-syntax-flow": "7.27.1",
     "@babel/plugin-transform-react-jsx": "7.27.1",
-    "@types/node": "22.17.2",
+    "@types/node": "22.18.0",
     "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7",
     "@types/uuid": "10.0.0",
