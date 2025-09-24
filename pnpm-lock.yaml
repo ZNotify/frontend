@@ -48,8 +48,8 @@ importers:
         specifier: 7.0.1
         version: 7.0.1(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.4))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.4))(eslint@9.36.0)(typescript@5.9.2)
       framer-motion:
-        specifier: 12.23.19
-        version: 12.23.19(@emotion/is-prop-valid@1.3.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: 12.23.21
+        version: 12.23.21(@emotion/is-prop-valid@1.3.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       less:
         specifier: 4.4.1
         version: 4.4.1
@@ -2179,8 +2179,8 @@ packages:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
 
-  framer-motion@12.23.19:
-    resolution: {integrity: sha512-AaWAohgTs2+wUoDdpJaaqMgV6vkm1uzzDlZUItem45linLrFiFqi4iw7bryhcVqu4loaaSLtSjAojfCAB3qczw==}
+  framer-motion@12.23.21:
+    resolution: {integrity: sha512-UWDtzzPdRA3UpSNGril5HjUtPF1Uo/BCt5VKG/YQ8tVpSkAZ22+q8o+hYO0C1uDAZuotQjcfzsTsDtQxD46E/Q==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -2672,8 +2672,8 @@ packages:
   minimist@1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
 
-  motion-dom@12.23.19:
-    resolution: {integrity: sha512-ivUCJ0zVZt7S++D8+ONeefkJj/8JlpCRYzGegLdXr8Z9aWg64KyljdaCGVa54Vv0K8hNE7vRQSaQve7V5l3rMw==}
+  motion-dom@12.23.21:
+    resolution: {integrity: sha512-5xDXx/AbhrfgsQmSE7YESMn4Dpo6x5/DTZ4Iyy4xqDvVHWvFVoV+V2Ri2S/ksx+D40wrZ7gPYiMWshkdoqNgNQ==}
 
   motion-utils@12.23.6:
     resolution: {integrity: sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==}
@@ -6184,9 +6184,9 @@ snapshots:
       combined-stream: 1.0.8
       mime-types: 2.1.35
 
-  framer-motion@12.23.19(@emotion/is-prop-valid@1.3.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  framer-motion@12.23.21(@emotion/is-prop-valid@1.3.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
-      motion-dom: 12.23.19
+      motion-dom: 12.23.21
       motion-utils: 12.23.6
       tslib: 2.4.1
     optionalDependencies:
@@ -6748,7 +6748,7 @@ snapshots:
 
   minimist@1.2.7: {}
 
-  motion-dom@12.23.19:
+  motion-dom@12.23.21:
     dependencies:
       motion-utils: 12.23.6
 
