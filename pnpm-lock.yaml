@@ -27,8 +27,8 @@ importers:
         specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.1.16)(react@19.1.1))(@types/react@19.1.16)(react@19.1.1)
       '@types/node':
-        specifier: 22.18.7
-        version: 22.18.7
+        specifier: 22.18.8
+        version: 22.18.8
       '@types/react':
         specifier: 19.1.16
         version: 19.1.16
@@ -40,7 +40,7 @@ importers:
         version: 11.0.0
       '@vitejs/plugin-react':
         specifier: 5.0.4
-        version: 5.0.4(vite@7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0))
+        version: 5.0.4(vite@7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0))
       eslint:
         specifier: 9.36.0
         version: 9.36.0
@@ -82,10 +82,10 @@ importers:
         version: 13.0.0
       vite:
         specifier: 7.1.7
-        version: 7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0)
+        version: 7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0)
       vite-plugin-pwa:
         specifier: 1.0.3
-        version: 1.0.3(vite@7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
+        version: 1.0.3(vite@7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0)
       web-vitals:
         specifier: 5.1.0
         version: 5.1.0
@@ -1301,8 +1301,8 @@ packages:
   '@types/ms@0.7.31':
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
 
-  '@types/node@22.18.7':
-    resolution: {integrity: sha512-3E97nlWEVp2V6J7aMkR8eOnw/w0pArPwf/5/W0865f+xzBoGL/ZuHkTAKAGN7cOWNwd+sG+hZOqj+fjzeHS75g==}
+  '@types/node@22.18.8':
+    resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
 
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -4874,7 +4874,7 @@ snapshots:
 
   '@types/ms@0.7.31': {}
 
-  '@types/node@22.18.7':
+  '@types/node@22.18.8':
     dependencies:
       undici-types: 6.21.0
 
@@ -4890,7 +4890,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 22.18.7
+      '@types/node': 22.18.8
 
   '@types/semver@7.3.13': {}
 
@@ -4995,7 +4995,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@5.0.4(vite@7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0))':
+  '@vitejs/plugin-react@5.0.4(vite@7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0))':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.4)
@@ -5003,7 +5003,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.38
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0)
+      vite: 7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6437,7 +6437,7 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 22.18.7
+      '@types/node': 22.18.8
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
@@ -7430,18 +7430,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@1.0.3(vite@7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
+  vite-plugin-pwa@1.0.3(vite@7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0))(workbox-build@7.0.0(@types/babel__core@7.20.5))(workbox-window@7.0.0):
     dependencies:
       debug: 4.4.0
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.14
-      vite: 7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0)
+      vite: 7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0)
       workbox-build: 7.0.0(@types/babel__core@7.20.5)
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.1.7(@types/node@22.18.7)(less@4.4.1)(terser@5.44.0):
+  vite@7.1.7(@types/node@22.18.8)(less@4.4.1)(terser@5.44.0):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -7450,7 +7450,7 @@ snapshots:
       rollup: 4.46.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.18.7
+      '@types/node': 22.18.8
       fsevents: 2.3.3
       less: 4.4.1
       terser: 5.44.0
