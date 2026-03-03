@@ -69,8 +69,8 @@ importers:
         specifier: 17.6.0
         version: 17.6.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       rollup-plugin-visualizer:
-        specifier: 7.0.0
-        version: 7.0.0(rollup@2.79.1)
+        specifier: 7.0.1
+        version: 7.0.1(rollup@2.79.1)
       terser:
         specifier: 5.46.0
         version: 5.46.0
@@ -3033,8 +3033,8 @@ packages:
     peerDependencies:
       rollup: ^2.0.0
 
-  rollup-plugin-visualizer@7.0.0:
-    resolution: {integrity: sha512-loo4kmhTg7GMO0hqaUv/azvLPUT2B4jXU3gNMG35gm1mWKpOzhV6rspb/Mqmsfg7oOTdkzdmOckCIwGB5Ca1CA==}
+  rollup-plugin-visualizer@7.0.1:
+    resolution: {integrity: sha512-UJUT4+1Ho4OcWmPYU3sYXgUqI8B8Ayfe06MX7y0qCJ1K8aGoKtR/NDd/2nZqM7ADkrzny+I99Ul7GgyoiVNAgg==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
@@ -7195,7 +7195,7 @@ snapshots:
       serialize-javascript: 4.0.0
       terser: 5.46.0
 
-  rollup-plugin-visualizer@7.0.0(rollup@2.79.1):
+  rollup-plugin-visualizer@7.0.1(rollup@2.79.1):
     dependencies:
       open: 11.0.0
       picomatch: 4.0.3
