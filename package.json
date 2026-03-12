@@ -16,7 +16,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@types/uuid": "11.0.0",
-    "@vitejs/plugin-react": "5.1.4",
+    "@vitejs/plugin-react": "5.2.0",
     "eslint": "10.0.3",
     "eslint-config-react-app": "7.0.1",
     "less": "4.6.3",
