@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@babel/core": "7.29.7",
-    "@babel/plugin-syntax-flow": "7.29.7",
-    "@babel/plugin-transform-react-jsx": "7.29.7",
+    "@babel/core": "8.0.0",
+    "@babel/plugin-syntax-flow": "8.0.0",
+    "@babel/plugin-transform-react-jsx": "8.0.0",
     "@types/node": "24.13.2",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
