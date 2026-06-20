@@ -78,8 +78,8 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
       uuid:
-        specifier: 14.0.0
-        version: 14.0.0
+        specifier: 14.0.1
+        version: 14.0.1
       vite:
         specifier: 8.0.16
         version: 8.0.16(@types/node@24.13.2)(less@4.6.6)(terser@5.48.0)
@@ -4149,6 +4149,10 @@ packages:
 
   uuid@14.0.0:
     resolution: {integrity: sha512-Qo+uWgilfSmAhXCMav1uYFynlQO7fMFiMVZsQqZRMIXp0O7rR7qjkj+cPvBHLgBqi960QCoo/PH2/6ZtVqKvrg==}
+    hasBin: true
+
+  uuid@14.0.1:
+    resolution: {integrity: sha512-6ZxzVpzDXDa3bJWaHilVayA+BH/1zmxCJoVgvmqJnid/gPoKHxUrS/aC/T6LGQtNHT+XHG9fXPJB4d+IrU30Ew==}
     hasBin: true
 
   vfile-message@4.0.2:
@@ -9485,6 +9489,8 @@ snapshots:
       punycode: 2.3.1
 
   uuid@14.0.0: {}
+
+  uuid@14.0.1: {}
 
   vfile-message@4.0.2:
     dependencies:
