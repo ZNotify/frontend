@@ -30,7 +30,7 @@
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
     "framer-motion": "12.42.2",
-    "terser": "5.48.0",
+    "terser": "5.49.0",
     "typescript": "6.0.3",
     "uuid": "14.0.1",
     "vite": "8.1.3",
