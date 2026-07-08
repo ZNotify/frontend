@@ -27,8 +27,8 @@ importers:
         specifier: 11.14.1
         version: 11.14.1(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@types/react@19.2.17)(react@19.2.7)
       '@types/node':
-        specifier: 24.13.2
-        version: 24.13.2
+        specifier: 24.13.3
+        version: 24.13.3
       '@types/react':
         specifier: 19.2.17
         version: 19.2.17
@@ -40,7 +40,7 @@ importers:
         version: 11.0.0
       '@vitejs/plugin-react':
         specifier: 6.0.3
-        version: 6.0.3(vite@8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0))
+        version: 6.0.3(vite@8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0))
       eslint:
         specifier: 10.6.0
         version: 10.6.0
@@ -82,10 +82,10 @@ importers:
         version: 14.0.1
       vite:
         specifier: 8.1.3
-        version: 8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0)
+        version: 8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0)
       vite-plugin-pwa:
         specifier: 1.3.0
-        version: 1.3.0(vite@8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0))(workbox-build@7.0.0)(workbox-window@7.0.0)
+        version: 1.3.0(vite@8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0))(workbox-build@7.0.0)(workbox-window@7.0.0)
       web-vitals:
         specifier: 5.3.0
         version: 5.3.0
@@ -1636,6 +1636,9 @@ packages:
 
   '@types/node@24.13.2':
     resolution: {integrity: sha512-fRa09kZTgu8o71KFcDjUFuc7F+dEbZYZmkI0mg5YBTRs0yMKjYHsq/c0urDKeDb+D5qVgXOdFcuu+DZPKOITwA==}
+
+  '@types/node@24.13.3':
+    resolution: {integrity: sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==}
 
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -6316,6 +6319,10 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
+  '@types/node@24.13.3':
+    dependencies:
+      undici-types: 7.18.2
+
   '@types/parse-json@4.0.0': {}
 
   '@types/react-dom@19.2.3(@types/react@19.2.17)':
@@ -6433,10 +6440,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@6.0.3(vite@8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0))':
+  '@vitejs/plugin-react@6.0.3(vite@8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0)
+      vite: 8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0)
 
   '@xobotyi/scrollbar-width@1.9.5': {}
 
@@ -9570,18 +9577,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-plugin-pwa@1.3.0(vite@8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0))(workbox-build@7.0.0)(workbox-window@7.0.0):
+  vite-plugin-pwa@1.3.0(vite@8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0))(workbox-build@7.0.0)(workbox-window@7.0.0):
     dependencies:
       debug: 4.4.0
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.16
-      vite: 8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0)
+      vite: 8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0)
       workbox-build: 7.0.0
       workbox-window: 7.0.0
     transitivePeerDependencies:
       - supports-color
 
-  vite@8.1.3(@types/node@24.13.2)(less@4.6.7)(terser@5.48.0):
+  vite@8.1.3(@types/node@24.13.3)(less@4.6.7)(terser@5.48.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -9589,7 +9596,7 @@ snapshots:
       rolldown: 1.1.3
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 24.13.2
+      '@types/node': 24.13.3
       fsevents: 2.3.3
       less: 4.6.7
       terser: 5.48.0
