@@ -23,7 +23,7 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-markdown": "10.1.0",
-    "react-router-dom": "7.18.3",
+    "react-router-dom": "7.18.4",
     "react-use": "17.6.1",
     "rollup-plugin-visualizer": "7.1.1",
     "@chakra-ui/react": "3.37.0",
